@@ -1,0 +1,19 @@
+---
+title: Absolventen
+layout: layout
+---
+
+<div class="absolventen grid-2col">
+	{% for absolvent in absolventen %}
+	<div class="absolvent grid-2col">
+		<div class="portrait">
+			{% if absolvent.noportrait === true %}
+				{% image "src/img/portraits/filler.jpg", "", "(min-width: 30em) 25vw, 100vw" %}
+			{% else %}
+				{% image "src/img/portraits/" + absolvent.slug + ".jpg", "", "(min-width: 30em) 25vw, 100vw" %}
+			{% endif %}
+		</div>
+		<h2>{{ absolvent.name }}</h2>
+	</div>
+	{% endfor %}
+</div>
