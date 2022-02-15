@@ -1,10 +1,11 @@
 .index-container {
-	color: rgba($color: #fff, $alpha: 0.7);
+	background-attachment: fixed;
 	background: linear-gradient(296deg, var(--black) 0%, var(--purple) 87.75%);
 	background-size: contain;
-	background-attachment: fixed;
+	color: rgba($color: #fff, $alpha: 0.7);
 	min-height: 100vh;
 	width: 100%;
+	height: auto;
 	display: grid;
 	position: relative;
 	align-content: start;
@@ -25,9 +26,10 @@
 			'_'
 			'text';
 
-			@include r(1024) {
-				position: relative;
-			}
+		@include r(1024) {
+			position: relative;
+			height: auto;
+		}
 	}
 
 	.logo {
@@ -47,13 +49,13 @@
 		// position: fixed;
 		z-index: 5;
 
-		&-menu{
+		&-menu {
 			opacity: 0;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			filter: blur(20px);
-			transition: opacity .5s ease-in-out, filter .4s ease-out;
+			transition: opacity 0.5s ease-in-out, filter 0.4s ease-out;
 			position: fixed;
 			top: 42%;
 			left: 47%;
@@ -64,8 +66,8 @@
 			text-transform: uppercase;
 			border: none;
 			color: #fff;
-			letter-spacing: .2em;
-			background: rgba($color: #fff, $alpha: .2);
+			letter-spacing: 0.2em;
+			background: rgba($color: #fff, $alpha: 0.2);
 			cursor: pointer;
 		}
 
@@ -162,23 +164,29 @@
 
 	.timecard {
 		transform: none;
+		label {
+			img {
+				transform: scaleY(-100%);
+			}
+		}
 	}
 }
 
 .timecard-container {
-	@include r(1024){
+	z-index: 10;
+
+	@include r(1024) {
 		position: fixed;
 		width: 100%;
 		height: 100%;
 		bottom: 0;
 		left: 0;
-		z-index: 10;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		pointer-events: none;
 		transform: translateY(50%);
-		transition: transform .5s ease-in-out;
+		transition: transform 0.5s ease-in-out;
 	}
 }
 
@@ -196,8 +204,8 @@
 	}
 
 	@include r(1024) {
-		transform: translateY(40%);
-		transition: transform .5s ease-in-out;
+		transform: translateY(35%);
+		transition: transform 0.5s ease-in-out;
 		margin: $padding-large 5rem;
 		display: flex;
 		justify-content: space-between;
@@ -207,11 +215,18 @@
 			display: block;
 			position: absolute;
 			top: 0;
-			left: 0;
-			right: 0;
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			padding: $padding-medium 12rem $padding-medium $padding-medium;
 			text-align: center;
 			text-transform: uppercase;
 			font-size: 2rem;
+
+			img {
+				margin-right: $padding-large;
+				transition: transform 0.25s ease-in-out;
+			}
 		}
 	}
 
@@ -238,9 +253,9 @@
 		justify-content: flex-end;
 		text-align: center;
 		font-size: 2.4rem;
-
 	}
-	.bottom, .top {
+	.bottom,
+	.top {
 		text-transform: uppercase;
 		font-size: 1rem;
 	}
@@ -270,7 +285,7 @@
 
 		a {
 			display: block;
-			color: rgba($color: #fff, $alpha: .7);
+			color: rgba($color: #fff, $alpha: 0.7);
 		}
 	}
 }

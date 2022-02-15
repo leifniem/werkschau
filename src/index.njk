@@ -44,9 +44,12 @@ layout: layout
 						</p>
 				</div>
 		</div>
-		<label class="timecard-container">
+		<div class="timecard-container">
 				<div class="timecard wrapper">
-					<label for="timecard-toggle">Info</label>
+					<label for="timecard-toggle" class="dektop-only">
+						{% image "src/img/icon/arrow_white.svg", "", "" %}
+						Zeit und Ort
+					</label>
 					<div class="times">
 						<div class="col date">
 							<span>18</span>
@@ -87,7 +90,7 @@ layout: layout
 								Time<br>
 								Location<br>
 							</h2>
-							<p>
+							<p class="m-centered">
 								Leider hat ein heimtückisches Virus das Schloss verwünscht und nicht alle dürfen jederzeit eintreten: Nur unter 2G+ Bedingungen öffnen sich die Burgmauern für eine gedeckelte Anzahl an Gästen. Maximal 100 Personen im Gebäude!<br>
 								<br>
 								Es gelten die allgemeinen Corona-Regeln: Abstand, Hygiene, Maske.
@@ -121,7 +124,7 @@ layout: layout
 							</a>
 						</footer>
 				</div>
-		</label>
+		</div>
 		<footer class="site-footer site-footer-index desktop-only">
 			<a href="#">
 				Datenschutz
