@@ -11,3 +11,16 @@
 @import './typo.scss';
 @import './index.scss';
 @import './grid.scss';
+@import './absolventinnen.scss';
+
+@include r(1024) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.desktop-only {
+		display: none !important;
+	}
+}

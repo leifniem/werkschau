@@ -1,0 +1,25 @@
+---
+title: Absolvent*innen
+layout: layout
+bodyClass: absolventinnen
+---
+
+<div class="absolventinnen-container wrapper">
+	<div class="grid-2col">
+		{% for absolvent in absolventinnen %}
+			<a href="/absolventinnen/{{ absolvent.slug }}" class="absolventin grid-2col">
+				<div class="portrait">
+					{% if absolvent.noportrait === true %}
+						{% image "src/img/portraits/filler.jpg", "", "(min-width: 30em) 25vw, 100vw" %}
+					{% else %}
+						{% image "src/img/portraits/" + absolvent.slug + ".jpg", "", "(min-width: 30em) 25vw, 100vw" %}
+					{% endif %}
+				</div>
+				<div class="text">
+					<h2>{{ absolvent.name }}</h2>
+					<h3>{{ absolvent.title }}</h3>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+</div>

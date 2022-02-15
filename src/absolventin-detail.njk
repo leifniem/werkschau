@@ -1,0 +1,27 @@
+---
+pagination:
+  data: absolventinnen
+  size: 1
+  alias: absolventin
+permalink: "absolventinnen/{{ absolventin.slug }}"
+layout: 'layout'
+bodyClass: 'transparent-header menu-white no-title'
+eleventyComputed:
+  title: "{{ absolventin.name }}"
+---
+
+<div class="absolventin-head">
+	<div class="grid-2col wrapper">
+		{% if absolventin.noportrait === true %}
+			{% image "src/img/portraits/filler.jpg", "", "(min-width: 30em) 40vw, 100vw" %}
+		{% else %}
+			{% image "src/img/portraits/" + absolventin.slug + ".jpg", "", "(min-width: 30em) 40vw, 100vw" %}
+		{% endif %}
+		<div class="text">
+			<p>{{ absolventin.name }}</p>
+			<h1>{{ absolventin.title }}</h1>
+			<p>{{ absolventin.desc_long }}</p>
+		</div>
+	</div>
+</div>
+<div class="absolventin-content"></div>

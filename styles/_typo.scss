@@ -1,0 +1,42 @@
+p ~ p {
+	margin-top: $padding-medium;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-bottom: $padding-medium;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: 700;
+}
+
+p {
+	max-width: 60ch;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+
+	&:visited {
+		color: $purple;
+	}
+}
+
+h1 {
+	line-height: 1.1;
+}
+
+h2 {
+	line-height: 1.2;
+}

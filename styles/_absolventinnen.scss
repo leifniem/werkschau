@@ -1,0 +1,52 @@
+.absolventinnen-container {
+	padding: 12rem $padding-medium $padding-big;
+
+	@include r(1024) {
+		padding: 12rem $padding-big $padding-large;
+	}
+}
+
+.absolventin {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	transition: opacity 0.5s ease-in-out;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		h3 {
+			hyphens: auto;
+			letter-spacing: normal;
+			font-size: 1rem;
+		}
+	}
+}
+
+.absolventin-head {
+	width: 100%;
+	background: var(--gradient-radial);
+	align-content: center;
+
+	.wrapper {
+		max-width: 54rem;
+		display: grid;
+		grid-gap: $padding-big;
+
+		@include r(864) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}

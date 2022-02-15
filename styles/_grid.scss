@@ -1,0 +1,15 @@
+.grid-2col {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: $padding-large;
+
+	@include r(1024) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	> * {
+		position: relative;
+		max-width: 100%;
+	}
+}

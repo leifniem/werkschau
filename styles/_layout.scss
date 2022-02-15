@@ -1,0 +1,63 @@
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: $padding-large;
+	background: rgba(#fff, .9);
+	display: grid;
+	justify-content: end;
+	pointer-events: none;
+
+	> * {
+		pointer-events: all;
+	}
+
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		backdrop-filter: blur(12px);
+		background: rgba(#fff, 0.7);
+	}
+
+	@include r(1024) {
+		grid-template-columns: auto 1fr;
+	}
+
+	.page-title {
+		text-align: right;
+		margin: $padding-medium 0 0 0;
+	}
+
+	.transparent-header & {
+		justify-content: flex-end;
+		background: none;
+		backdrop-filter: none;
+	}
+
+	.logo-header {
+		width: 25vw;
+		grid-row: span 2;
+		max-height: 100%;
+		position: relative;
+		justify-self: flex-start;
+
+		> * {
+			position: absolute;
+			top: 0;
+		}
+
+		img, picture {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+.site-footer {
+	text-align: center;
+}
+
+.m-centered {
+	margin-left: auto;
+	margin-right: auto;
+}
