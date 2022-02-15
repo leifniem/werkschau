@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="img/png" href="/images/favicon.png"/>
-    <meta name="description" content="To eleventy and beyond!"/>
-    <meta property="og:image" content="/images/og-image-banner.jpg"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
-    <meta property="og:site_name" content="Slinkity"/>
-    <meta property="og:title"/>
-    <meta property="og:description" content="To eleventy and beyond!"/>
-	<link rel="stylesheet" href="https://use.typekit.net/ltv2twx.css">
-    <link rel="stylesheet" href="/@root/styles/index.scss"> {{ __slinkity.head | safe }}
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <header class="site-header">
-		<div class="wrapper">
-			<nav>
-			  <a href="/">Home</a>
-			  <a href="/absolventen">Absolventen</a>
-			</nav>
-		</div>
-	</header>
-    <main>
-      {{ content | safe }}
-    </main>
-  </body>
+		<head>
+				<meta charset="UTF-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="icon" type="img/png" href="/images/favicon.png"/>
+				<meta name="description" content="To eleventy and beyond!"/>
+				<meta property="og:image" content="/images/og-image-banner.jpg"/>
+				<meta property="og:image:width" content="1200"/>
+				<meta property="og:image:height" content="630"/>
+				<meta property="og:site_name" content="Slinkity"/>
+				<meta property="og:title"/>
+				<meta property="og:description" content="Die Absolventen im Studiengang Kommunikations des Wintersemesters 2021/2022 stellen ihre Arbeiten vor."/>
+				<link rel="stylesheet" href="https://use.typekit.net/ltv2twx.css">
+				<link rel="stylesheet" href="/@root/styles/styles.scss">
+				{{ __slinkity.head | safe }}
+				<title>{{ title }}</title>
+		</head>
+		<body>
+				<header class="site-header">
+						<div class="wrapper">
+								<label for="menu-toggle">
+									Menu <div class="circle"></div>
+								</label>
+								<input type="checkbox" id="menu-toggle" class="hidden-toggle" aria-hidden="aria-hidden">
+								<div class="nav-container">
+										<div class="sponsors desktop-only">
+												{% image "src/img/sponsor/hsrm.png", "Logo der Hochschule RheinMain", "(min-width: 1024px) 20vh, 40vw" %}
+												{% image "src/img/sponsor/werkschau.png", "Logo der Werkschau Wiesbaden", "(min-width: 1024px) 20vh, 40vw" %}
+												{% image "src/img/sponsor/bernhardtstiftung.png", "Logo der Bernhardtstiftung", "(min-width: 1024px) 20vh, 40vw" %}
+												{% image "src/img/sponsor/seglogo.png", "Logo der SEG", "(min-width: 1024px) 20vh, 40vw" %}
+										</div>
+										<div class="bg">{% image "src/img/key-visual-blur-min.png", "", "100vh" %}</div>
+										<label for="menu-toggle">
+											{% image "src/img/icon/close.svg", "", "" %}
+										</label>
+										<nav>
+												<ul>
+														<li>
+																<a href="/">Home</a>
+														</li>
+														<li>
+																<a href="/absolventen">Absolventen</a>
+														</li>
+												</ul>
+										</nav>
+										<footer class="site-footer site-footer-index desktop-only">
+												<a href="#">
+														Datenschutz
+												</a>
+												<a href="#">
+														Impressum
+												</a>
+										</footer>
+								</div>
+						</div>
+				</header>
+				<main>
+						{{ content | safe }}
+				</main>
+		</body>
 </html>
