@@ -217,7 +217,7 @@
 
 		@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 			backdrop-filter: blur(10px);
-			background: rgba($color: $teal-rgb, $alpha: 0.7);
+			background: rgba($color: $teal-rgb, $alpha: 0.85);
 			transition: transform 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
 		}
 

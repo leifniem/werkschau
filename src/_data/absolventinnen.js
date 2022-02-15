@@ -2,7 +2,7 @@ module.exports = [
 	{
 		"slug": "annalenaadrian",
 		"desc_short": "Corporate Design einer nachhaltigen Schmuckmarke",
-		"desc_long": "Die Vision von ENSO ist es nachhaltigen Schmuck mit dem Fokus auf Ringe zu kreieren und die Grenzen zwischen den Geschlechtern zu verwischen. Die Marke zelebriert die Schönheit der Imperfektion. Jeder Ring ist ein Unikat und besteht aus 100% aus Flaschen aus recyceltem Altglas. Bei ENSO ist Vielfalt eine Selbstverständlichkeit und Nachhaltigkeit steht im Mittelpunkt.",
+		"desc_long": "Die Vision von ENSO ist es nachhaltigen Schmuck mit dem Fokus auf Ringe zu kreieren und die Grenzen zwischen den Geschlechtern zu verwischen. Die Marke zelebriert die Schönheit der Imperfektion. Jeder Ring ist ein Unikat und besteht zu 100% aus Flaschen aus recyceltem Altglas. Bei ENSO ist Vielfalt eine Selbstverständlichkeit und Nachhaltigkeit steht im Mittelpunkt.",
 		"name": "Anna Lena Adrian",
 		"title": "ENSO"
 	},
