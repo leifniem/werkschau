@@ -2,6 +2,13 @@ const fs = require('fs')
 
 let absolventinnen = [
 	{
+		"slug": "annasophieschneider",
+		"desc_short": "Illustrierte Zeitreise für junge Leser",
+		"desc_long": "„Alles platt in der Platte“ ist eine illustrierte Zeitreise für junge Leser. Das Buch beschäftigt sich mit der DDR und soll Jugendliche dazu animieren sich mit diesem, historisch sehr wichtigen Thema auseinander zu setzen. Informationsgrundlage des selbst verfassten Textes sind Erzählungen, Fotos und Original-Dokumente meiner Familie, welche aus der ehemaligen DDR stammt. Auch wenn das Buch ursprünglich für Jugendliche verfasst ist, werden sicher \"Ex-Ossis\" an der ein oder anderen Stelle schmunzeln, wenn es beispielsweise um \"Herrn Fuchs und Frau Elster\" oder die \"Schulmilch\" geht.",
+		"name": "Anna Sophie Schneider",
+		"title": "Alles platt in der Platte? – Kindheit und Jugend in der DDR"
+	},
+	{
 		"slug": "annalenaadrian",
 		"desc_short": "Corporate Design einer nachhaltigen Schmuckmarke",
 		"desc_long": "Die Vision von ENSO ist es nachhaltigen Schmuck mit dem Fokus auf Ringe zu kreieren und die Grenzen zwischen den Geschlechtern zu verwischen. Die Marke zelebriert die Schönheit der Imperfektion. Jeder Ring ist ein Unikat und besteht zu 100% aus Flaschen aus recyceltem Altglas. Bei ENSO ist Vielfalt eine Selbstverständlichkeit und Nachhaltigkeit steht im Mittelpunkt.",
@@ -55,19 +62,18 @@ let absolventinnen = [
 		"name": "Ildikó Mueller",
 		"title": "Dokumentarische Visualisierung der Mode der 90er Jahre"
 	},
-	// {
-	// 	"slug": "jenniferleidolf",
-	// 	"desc_short": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen",
-	// 	"desc_long": "Allein in Wiesbaden gibt es an die 30 - 40 ambulanten Pflegedienste. Gerade in den letzten Monaten ist die Relevanz dieser Betriebe wohl jedem klar geworden. Pflegekräfte haben einen anstrengenden und stressigen Arbeitsalltag, wofür sie in vielen Fällen nicht ausreichend gewürdigt werden. Sowohl in gesellschaftlicher Hinsicht, als auch in finanzieller. Die meisten Pflegedienste bedienen sich intern einer Software, mit welcher sie alle Prozesse, Touren, Dienstpläne, Verordnungen, Medikamentengaben, Pflegeberichte, etc. koordinieren und mit den Außendienstkräften kommunizieren. Diese Art der Kommunikation zwischen dem Büro und den Außendienstkräften ist von zentraler Bedeutung für jeden Pflegedienst. Leider sind aktuelle Systeme zum einen nicht auf digitales Arbeiten ausgelegt, zum anderen sind sie nicht intuitiv genug, als dass man sie ohne wochenlange und teure Schulungen einwandfrei bedienen könnte. Die Arbeit der Außen- und Innendienstmitarbeiter:innen von ambulanten Pflegediensten soll durch eine intuitivere und digitalere Plattform vereinfacht werden. Die Kommunikation unter den Mitarbeiter:innen, sowie die Kommunikation zu Krankenhäusern, Ärzten, Krankenkassen, etc. soll erleichtert werden. Die Entfernungen und Reichweiten von ambulanten Pflegediensten sind oft groß, die Wege vom Kunden\nüber den Pflegedienst bis hin zur Kasse sind lang, was durch ein digitaleres Arbeiten beschleunigt und vereinfacht werden könnte. Mein Hauptanliegen war, das Programm so intuitiv wie möglich zu gestalten, sodass jede der Pflegekräfte das Programm via App benutzen kann. Und es hierfür keiner Schulung bedarf, die sich in wirtschaftlicher Hinsicht z. B. bei Mini-Jobber:innen auch gar nicht lohnen würde. Beispielsweise ein integriertes ausgereiftes Fuhrpark- oder Verordnungsmanagment ist am Markt leider schwer zu finden. Bisher gibt es kein Programm, welches alle Bedürfnisse erfüllt. Meine Idee war es, eine Plattform zu schaffen, die möglichst alle Prozesse in allen Bereichen der ambulanten Pflege vereint und vereinheitlicht. So soll eine Verbesserung und Vereinfachung der Kommunikation innerhalb eines Pflegedienstes erwirkt werden, sowie ein Netzwerk unter verschiedenen Leistungserbringern\n(Ärzte, Apotheken, Krankenhäuser und Sozialdiensten) herstellen. Insgesamt umfasst mein Projekt zwei Apps und eine Software. Eine App für den Außendienst (Pflegekräfte) und eine App für die Kund:innen. Hinzu kommt die PC-Software für den Innendienst. In der App für die Pflegekräfte liegt mein Hauptaugenmerk auf einer schnellen und einfachen Bedienung, da die ohnehin knappe Zeit nicht mit langem Tippen zwecks Dokumentation oder Kommunikation verschwendet werden soll. Dies ist in drei verschiedenen Sprachen möglich, um etwaige Barrieren zu beseitigen. Wohingegen ich bei der Kund:innen-App vor allem Wert darauf gelegt habe, komplexe Daten in eine einfache Form zu bringen, sodass auch ältere Menschen im Stande sind, die App zu nutzen und in engem Kontakt mit ihrem Pflegedienst stehen zu können. In der Software geht es vor allem um Vereinheitlichung und Verschlankung von langwierigen und komplexen Prozessen und Vorgängen. Dies geschieht durch eine permanente Live-Synchronisierung (inkl. mit den Apps), digitalisierte Prozesse und eine zielgruppenorientierte und anwenderfreundliche Gestaltung.",
-	// 	"name": "Jennifer Leidolf",
-	// 	"title": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen"
-	// },
+	{
+		"slug": "jenniferleidolf",
+		"desc_short": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen",
+		"desc_long": "Allein in Wiesbaden gibt es an die 30 - 40 ambulanten Pflegedienste. Gerade in den letzten Monaten ist die Relevanz dieser Betriebe wohl jedem klar geworden. Pflegekräfte haben einen anstrengenden und stressigen Arbeitsalltag, wofür sie in vielen Fällen nicht ausreichend gewürdigt werden. Sowohl in gesellschaftlicher Hinsicht, als auch in finanzieller. Die meisten Pflegedienste bedienen sich intern einer Software, mit welcher sie alle Prozesse, Touren, Dienstpläne, Verordnungen, Medikamentengaben, Pflegeberichte, etc. koordinieren und mit den Außendienstkräften kommunizieren. Diese Art der Kommunikation zwischen dem Büro und den Außendienstkräften ist von zentraler Bedeutung für jeden Pflegedienst. Leider sind aktuelle Systeme zum einen nicht auf digitales Arbeiten ausgelegt, zum anderen sind sie nicht intuitiv genug, als dass man sie ohne wochenlange und teure Schulungen einwandfrei bedienen könnte. Die Arbeit der Außen- und Innendienstmitarbeiter:innen von ambulanten Pflegediensten soll durch eine intuitivere und digitalere Plattform vereinfacht werden. Die Kommunikation unter den Mitarbeiter:innen, sowie die Kommunikation zu Krankenhäusern, Ärzten, Krankenkassen, etc. soll erleichtert werden. Die Entfernungen und Reichweiten von ambulanten Pflegediensten sind oft groß, die Wege vom Kunden\nüber den Pflegedienst bis hin zur Kasse sind lang, was durch ein digitaleres Arbeiten beschleunigt und vereinfacht werden könnte. Mein Hauptanliegen war, das Programm so intuitiv wie möglich zu gestalten, sodass jede der Pflegekräfte das Programm via App benutzen kann. Und es hierfür keiner Schulung bedarf, die sich in wirtschaftlicher Hinsicht z. B. bei Mini-Jobber:innen auch gar nicht lohnen würde. Beispielsweise ein integriertes ausgereiftes Fuhrpark- oder Verordnungsmanagment ist am Markt leider schwer zu finden. Bisher gibt es kein Programm, welches alle Bedürfnisse erfüllt. Meine Idee war es, eine Plattform zu schaffen, die möglichst alle Prozesse in allen Bereichen der ambulanten Pflege vereint und vereinheitlicht. So soll eine Verbesserung und Vereinfachung der Kommunikation innerhalb eines Pflegedienstes erwirkt werden, sowie ein Netzwerk unter verschiedenen Leistungserbringern\n(Ärzte, Apotheken, Krankenhäuser und Sozialdiensten) herstellen. Insgesamt umfasst mein Projekt zwei Apps und eine Software. Eine App für den Außendienst (Pflegekräfte) und eine App für die Kund:innen. Hinzu kommt die PC-Software für den Innendienst. In der App für die Pflegekräfte liegt mein Hauptaugenmerk auf einer schnellen und einfachen Bedienung, da die ohnehin knappe Zeit nicht mit langem Tippen zwecks Dokumentation oder Kommunikation verschwendet werden soll. Dies ist in drei verschiedenen Sprachen möglich, um etwaige Barrieren zu beseitigen. Wohingegen ich bei der Kund:innen-App vor allem Wert darauf gelegt habe, komplexe Daten in eine einfache Form zu bringen, sodass auch ältere Menschen im Stande sind, die App zu nutzen und in engem Kontakt mit ihrem Pflegedienst stehen zu können. In der Software geht es vor allem um Vereinheitlichung und Verschlankung von langwierigen und komplexen Prozessen und Vorgängen. Dies geschieht durch eine permanente Live-Synchronisierung (inkl. mit den Apps), digitalisierte Prozesse und eine zielgruppenorientierte und anwenderfreundliche Gestaltung.",
+		"name": "Jennifer Leidolf",
+		"title": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen"
+	},
 	{
 		"slug": "johannesbruns",
-		"desc_long": "Das New Life Balance System ist ein fiktives Messsystem, um die Zeitbalance von Arbeit, Sozialem, Muße und öffentlicher Teilhabe zu optimieren. Das spekulative Konzept beschäftigt sich mit einer Zukunftsversion, in der Zeit so wertvoll wie Geld und daher in allen Lebensbereichen außer der Arbeit knapp geworden ist. Um ein ausgeglicheneres und gesünderes Leben herzustellen, wird das New Life Balance System entwickelt, welches die Zeitnutzung von Menschen als Augmented Reality-Infografik permanent sichtbar macht.",
+		"desc_long": "Das New Life Balance System ist eine Zeitwaage, die der Messung von Work-Life-Balance dient. Dieses Augmented Reality Tool, ist eine Konzeptstudie für eine spezielle Zukunftsvision. In dieser Zukunft definieren Menschen ihren Wohlstand und ihren sozialen Status nicht mehr durch materielle Güter, sondern durch die Zeit, um ein schönes Leben zu führen. Das spekulative Design soll anregen, über den Zusammenhang von erlebter Zeit, Wohlstand, Statussymbolen und Social Credit Systemen nachzudenken.",
 		"name": "Johannes Bruns",
 		"title": "Das New Life Balance System",
-		"noportrait": true
 	},
 	{
 		"slug": "josephineweier",
@@ -198,16 +204,30 @@ let absolventinnen = [
 		"name": "Sevde Mazineler",
 		"title": "Infinite Scroll"
 	},
-	// {
-	// 	"slug": "sheilabreker",
-	// 	"name": "Sheila Breker?",
-	// 	"title": "???"
-	// },
-	{ "slug": "theresapartschev", "name": "Theresa Partschev", "title": "KORIOS" },
+	{
+		"slug": "sheilabreker",
+		"name": "Sheila Breker",
+		"title": "Moving Fragments",
+		"desc_short": "Experimenteller Fotokurzfilm über das Abhandenkommen von Heimat",
+		"desc_long": `Erinnerungen bewegen sich; verändern sich; lösen sich; brennen sich ein. Erinnerungen haben Wirkung. Und fast immer gibt es hierfür einen Auslöser. Einen Schlüsselreiz, der uns kurzerhand in die Vergangenheit katapultiert. Der experimentelle Fotokurzfilm Moving Fragments beschäftigt sich mit dem Abhandenkommen von Heimat und untersucht die Erinnerungen der drei Protagonisten aus Jordanien. Ein Ausflug in die Köpfe derer, denen oftmals als einziges Andenken an ihre Vergangenheit ihr eigenes Gedankengut bleibt.
+
+		gefördert von Hessenfilm`
+	},
+	{ "slug": "theresapartschev", "name": "Theresa Partschev", "title": "KORIOS", "desc_long": "Wir alle wissen, dass jedes Kind ganz eigene, fantastische Talente und Eigenschaften aufweist. Doch dieses Potenzial bleibt in unserem traditionellen Bildungssystem oftmals links liegen. KORIOS ist eine Onlineplattform, die genau das ausgleichen möchte: Sie bietet Kurse an, die das Spiel Dungeons & Dragons nutzen, um die individuellen Talente, den Charakter und das emotionale Bewusstsein von Kindern zu stärken." },
 ]
 
 absolventinnen = absolventinnen.map((absolventin) => {
-	absolventin['files'] = fs.readdirSync(`./src/img/projekte/${absolventin.slug}/`)
+	const files = fs.readdirSync(`./src/img/projekte/${absolventin.slug}/`)
+	absolventin.videos = []
+	absolventin.images = []
+	for (let i = files.length - 1; i >= 0; i--) {
+		const file = files[i];
+		if (file.includes('.mp4')) {
+			absolventin.videos.push(file)
+		} else if (!file.includes('_thumb') && file.includes('.jpg') ){
+			absolventin.images.push(file)
+		}
+	}
 	return absolventin
 })
 

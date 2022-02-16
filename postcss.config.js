@@ -9,5 +9,6 @@ module.exports = {
 		require('cssnano')({
 			preset: 'advanced',
 		}),
+		require('postcss-combine-media-query'),
 	],
 };

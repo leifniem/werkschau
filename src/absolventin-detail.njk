@@ -5,12 +5,12 @@ pagination:
   alias: absolventin
 permalink: "absolventinnen/{{ absolventin.slug }}/"
 layout: 'layout'
-bodyClass: 'transparent-header menu-white no-title'
+bodyClass: 'transparent-header menu-white no-title absolvent-in'
 eleventyComputed:
   title: "{{ absolventin.name }}"
 ---
 
-<div class="absolventin-head">
+<div class="absolventin-head" id="top">
 	<div class="grid-2col wrapper">
 		{% if absolventin.noportrait === true %}
 			{% image "src/img/portraits/filler.jpg", "", "(min-width: 30em) 40vw, 100vw" %}
@@ -23,9 +23,34 @@ eleventyComputed:
 			<p>{{ absolventin.desc_short }}</p>
 		</div>
 	</div>
+	<a href="#projekt" class="arrdown">
+			Projekt
+			{% image "src/img/icon/arrow_white.svg",
+		"",
+		"" %}
+	</a>
 </div>
-<div class="absolventin-content">
-	<div class="description">
-		{{ absolventin.desc_long }}
+<div class="absolventin-content" id="projekt">
+	<a href="#top" class="arrup">
+		{% image "src/img/icon/arrow_dark.svg",
+		"",
+		"" %}
+			Absolvent*in
+	</a>
+	<div class="wrapper">
+		<div class="description">
+			<h2>{{ absolventin.title }}</h2>
+			{{ absolventin.desc_long }}
+		</div>
+		<div class="media">
+			{% for video in absolventin.videos %}
+				<video controls preload poster="src/img/projekte/{{absolventin.slug}}/{{ video | replace('.mp4', '_thumb.jpg') }}">
+					<source src="/img/projekte/{{ absolventin.slug }}/{{ video }}" type="video/mp4">
+				</video>
+			{% endfor %}
+			{% for image in absolventin.images %}
+				{% image "src/img/projekte/" + absolventin.slug + "/" + image, "", "(min-width: 30em) 40vw, 100vw" %}
+			{% endfor %}
+		</div>
 	</div>
 </div>

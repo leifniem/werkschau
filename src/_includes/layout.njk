@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="img/png" href="/images/favicon.png"/>
-		<meta name="description" content="To eleventy and beyond!"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-config" content="/browserconfig.xml" />
+		<meta name="msapplication-TileColor" content="#261B43">
+		<meta name="theme-color" content="#261B43">
+		<meta name="description" content="Die Absolventinnen im Studiengang Kommunikationsdesign des Wintersemesters 2021/2022 stellen ihre Arbeiten vor."/>
 		<meta property="og:image" content="/images/og-image-banner.jpg"/>
 		<meta property="og:image:width" content="1200"/>
 		<meta property="og:image:height" content="630"/>
 		<meta property="og:site_name" content="Slinkity"/>
 		<meta property="og:title"/>
-		<meta property="og:description" content="Die absolventinnen im Studiengang Kommunikations des Wintersemesters 2021/2022 stellen ihre Arbeiten vor."/>
+		<meta property="og:description" content="Die Absolventinnen im Studiengang Kommunikationsdesign des Wintersemesters 2021/2022 stellen ihre Arbeiten vor."/>
 		<link rel="stylesheet" href="https://use.typekit.net/ltv2twx.css">
 		<link rel="stylesheet" href="/@root/styles/styles.scss">
 		{{ __slinkity.head | safe }}
-		<title>{{ title }}</title>
+		<title>{{ title }}{% if page.url != '/' -%}
+			&nbsp;— TIME TO SHINE — Werkschau Wiesbaden
+		{%- endif %}</title>
 	</head>
 	<body class="{{ bodyClass }}">
 		<header class="site-header">
 			<a href="/" class="logo-header desktop-only">
 				{% if not bodyClass.includes('no-logo') %}
-					{% image "src/img/logo_dark.svg",
+					{% image "src/img/logo.svg",
 					"",
 					"" %}
-					{% image "src/img/key-visual-blur-min.png", "", "400px" %}
+					{% image "src/img/key-visual-blur-min.png", "", "120px" %}
 				{% endif %}
 			</a>
 			<label for="menu-toggle">
@@ -61,20 +69,20 @@
 							<a href="/projekte">Projekte</a>
 						</li>
 						<li>
-							<a href="#">Instagram</a>
+							<a href="https://www.instagram.com/werkschauwiesbaden/">Instagram</a>
 						</li>
 						<li>
-							<a href="#">Archiv</a>
+							<a href="/archiv">Archiv</a>
 						</li>
 					</ul>
 				</nav>
 				<footer class="site-footer site-footer-index desktop-only">
 					<a href="#">
-														Datenschutz
-												</a>
+							Datenschutz
+					</a> —
 					<a href="#">
-														Impressum
-												</a>
+						Impressum
+					</a>
 				</footer>
 			</div>
 		</header>
@@ -84,7 +92,7 @@
 		<footer class="site-footer wrapper">
 			<a href="#">
 				Datenschutz
-			</a>
+			</a> —
 			<a href="#">
 				Impressum
 			</a>

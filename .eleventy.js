@@ -3,7 +3,7 @@ const tinysvg = require('@sardine/eleventy-plugin-tinysvg');
 
 async function imageShortcode(src, alt, sizes) {
 	let metadata = await Image(src, {
-		widths: [640, 960, 1280, 1920],
+		widths: [640, 960, 1280],
 		formats: ["webp", "jpeg", "svg"],
 		svgShortCircuit: true
 	});
@@ -30,6 +30,8 @@ module.exports = function (eleventyConfig) {
 	 */
 	eleventyConfig.addPassthroughCopy('public')
 	eleventyConfig.addPassthroughCopy('img')
+	eleventyConfig.addPassthroughCopy('src/img/projekte/**/*.mp4')
+	eleventyConfig.addPassthroughCopy('src/img/projekte/**/*_thumb.jpg')
 
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addJavaScriptFunction("image", imageShortcode);
