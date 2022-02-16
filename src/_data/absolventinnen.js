@@ -1,4 +1,6 @@
-module.exports = [
+const fs = require('fs')
+
+let absolventinnen = [
 	{
 		"slug": "annalenaadrian",
 		"desc_short": "Corporate Design einer nachhaltigen Schmuckmarke",
@@ -29,7 +31,8 @@ module.exports = [
 		"slug": "evafischerlarareitz",
 		"desc_short": "eine interaktive Rauminstallation zum Thema Kommunikation",
 		"name": "Eva Fischer & Lara Reitz",
-		"title": "mal makina"
+		"title": "mal makina",
+		"desc_long": "Die interaktive Rauminstallation verfremdet den Diskurs zweier Dialogpartner*innen in Echtzeit mittels audiovisueller Störfilter und erschwert damit die Kommunikation. Es stehen sich zwei Personen gegenüber. Zwischen ihnen befindet sich eine Art Blackbox. Sie hören und sehen sich jedoch nur über Kopfhörer bzw. Monitore. Sich selbst sehen sie dabei nicht. Die Gesichter werden mittels AR dezent verändert, dass der Dialog durch kleine, wichtige Details (z.B. fehlender Blickkontakt) gestört wird."
 	},
 	{
 		"slug": "fynnfischer",
@@ -49,16 +52,16 @@ module.exports = [
 		"slug": "ildikomueller",
 		"desc_short": "Dokumentarische Visualisierung der Mode der 90er Jahre",
 		"desc_long": "Mode ist ein sich immer wiederholender Kreislauf und so ist es auch nichts Ungewöhnliches, dass wir mitten im REVIVAL der Mode der 90er Jahre stecken. Aber welche Trends genau haben es aus den 90ern es ins Jahr 2021 zurückgeschafft? Und welche bleiben lieber in der Vergangenheit? Das REVIVAL Magazin gibt einen Überblick über die verschiedenen Modestile der 90er, Trends, sowie auch Popkultur. Das Magazin bietet einen nostalgischen Rückblick, sowie durch eigenen Fotografien einen direkten Vergleich zu der Mode heute und in welcher Form die Mode der 90er modernisiert wurde.",
-		"name": "Ildiko Mueller",
+		"name": "Ildikó Mueller",
 		"title": "Dokumentarische Visualisierung der Mode der 90er Jahre"
 	},
-	{
-		"slug": "jenniferleidolf",
-		"desc_short": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen",
-		"desc_long": "Allein in Wiesbaden gibt es an die 30 - 40 ambulanten Pflegedienste. Gerade in den letzten Monaten ist die Relevanz dieser Betriebe wohl jedem klar geworden. Pflegekräfte haben einen anstrengenden und stressigen Arbeitsalltag, wofür sie in vielen Fällen nicht ausreichend gewürdigt werden. Sowohl in gesellschaftlicher Hinsicht, als auch in finanzieller. Die meisten Pflegedienste bedienen sich intern einer Software, mit welcher sie alle Prozesse, Touren, Dienstpläne, Verordnungen, Medikamentengaben, Pflegeberichte, etc. koordinieren und mit den Außendienstkräften kommunizieren. Diese Art der Kommunikation zwischen dem Büro und den Außendienstkräften ist von zentraler Bedeutung für jeden Pflegedienst. Leider sind aktuelle Systeme zum einen nicht auf digitales Arbeiten ausgelegt, zum anderen sind sie nicht intuitiv genug, als dass man sie ohne wochenlange und teure Schulungen einwandfrei bedienen könnte. Die Arbeit der Außen- und Innendienstmitarbeiter:innen von ambulanten Pflegediensten soll durch eine intuitivere und digitalere Plattform vereinfacht werden. Die Kommunikation unter den Mitarbeiter:innen, sowie die Kommunikation zu Krankenhäusern, Ärzten, Krankenkassen, etc. soll erleichtert werden. Die Entfernungen und Reichweiten von ambulanten Pflegediensten sind oft groß, die Wege vom Kunden\nüber den Pflegedienst bis hin zur Kasse sind lang, was durch ein digitaleres Arbeiten beschleunigt und vereinfacht werden könnte. Mein Hauptanliegen war, das Programm so intuitiv wie möglich zu gestalten, sodass jede der Pflegekräfte das Programm via App benutzen kann. Und es hierfür keiner Schulung bedarf, die sich in wirtschaftlicher Hinsicht z. B. bei Mini-Jobber:innen auch gar nicht lohnen würde. Beispielsweise ein integriertes ausgereiftes Fuhrpark- oder Verordnungsmanagment ist am Markt leider schwer zu finden. Bisher gibt es kein Programm, welches alle Bedürfnisse erfüllt. Meine Idee war es, eine Plattform zu schaffen, die möglichst alle Prozesse in allen Bereichen der ambulanten Pflege vereint und vereinheitlicht. So soll eine Verbesserung und Vereinfachung der Kommunikation innerhalb eines Pflegedienstes erwirkt werden, sowie ein Netzwerk unter verschiedenen Leistungserbringern\n(Ärzte, Apotheken, Krankenhäuser und Sozialdiensten) herstellen. Insgesamt umfasst mein Projekt zwei Apps und eine Software. Eine App für den Außendienst (Pflegekräfte) und eine App für die Kund:innen. Hinzu kommt die PC-Software für den Innendienst. In der App für die Pflegekräfte liegt mein Hauptaugenmerk auf einer schnellen und einfachen Bedienung, da die ohnehin knappe Zeit nicht mit langem Tippen zwecks Dokumentation oder Kommunikation verschwendet werden soll. Dies ist in drei verschiedenen Sprachen möglich, um etwaige Barrieren zu beseitigen. Wohingegen ich bei der Kund:innen-App vor allem Wert darauf gelegt habe, komplexe Daten in eine einfache Form zu bringen, sodass auch ältere Menschen im Stande sind, die App zu nutzen und in engem Kontakt mit ihrem Pflegedienst stehen zu können. In der Software geht es vor allem um Vereinheitlichung und Verschlankung von langwierigen und komplexen Prozessen und Vorgängen. Dies geschieht durch eine permanente Live-Synchronisierung (inkl. mit den Apps), digitalisierte Prozesse und eine zielgruppenorientierte und anwenderfreundliche Gestaltung.",
-		"name": "Jennifer Leidolf",
-		"title": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen"
-	},
+	// {
+	// 	"slug": "jenniferleidolf",
+	// 	"desc_short": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen",
+	// 	"desc_long": "Allein in Wiesbaden gibt es an die 30 - 40 ambulanten Pflegedienste. Gerade in den letzten Monaten ist die Relevanz dieser Betriebe wohl jedem klar geworden. Pflegekräfte haben einen anstrengenden und stressigen Arbeitsalltag, wofür sie in vielen Fällen nicht ausreichend gewürdigt werden. Sowohl in gesellschaftlicher Hinsicht, als auch in finanzieller. Die meisten Pflegedienste bedienen sich intern einer Software, mit welcher sie alle Prozesse, Touren, Dienstpläne, Verordnungen, Medikamentengaben, Pflegeberichte, etc. koordinieren und mit den Außendienstkräften kommunizieren. Diese Art der Kommunikation zwischen dem Büro und den Außendienstkräften ist von zentraler Bedeutung für jeden Pflegedienst. Leider sind aktuelle Systeme zum einen nicht auf digitales Arbeiten ausgelegt, zum anderen sind sie nicht intuitiv genug, als dass man sie ohne wochenlange und teure Schulungen einwandfrei bedienen könnte. Die Arbeit der Außen- und Innendienstmitarbeiter:innen von ambulanten Pflegediensten soll durch eine intuitivere und digitalere Plattform vereinfacht werden. Die Kommunikation unter den Mitarbeiter:innen, sowie die Kommunikation zu Krankenhäusern, Ärzten, Krankenkassen, etc. soll erleichtert werden. Die Entfernungen und Reichweiten von ambulanten Pflegediensten sind oft groß, die Wege vom Kunden\nüber den Pflegedienst bis hin zur Kasse sind lang, was durch ein digitaleres Arbeiten beschleunigt und vereinfacht werden könnte. Mein Hauptanliegen war, das Programm so intuitiv wie möglich zu gestalten, sodass jede der Pflegekräfte das Programm via App benutzen kann. Und es hierfür keiner Schulung bedarf, die sich in wirtschaftlicher Hinsicht z. B. bei Mini-Jobber:innen auch gar nicht lohnen würde. Beispielsweise ein integriertes ausgereiftes Fuhrpark- oder Verordnungsmanagment ist am Markt leider schwer zu finden. Bisher gibt es kein Programm, welches alle Bedürfnisse erfüllt. Meine Idee war es, eine Plattform zu schaffen, die möglichst alle Prozesse in allen Bereichen der ambulanten Pflege vereint und vereinheitlicht. So soll eine Verbesserung und Vereinfachung der Kommunikation innerhalb eines Pflegedienstes erwirkt werden, sowie ein Netzwerk unter verschiedenen Leistungserbringern\n(Ärzte, Apotheken, Krankenhäuser und Sozialdiensten) herstellen. Insgesamt umfasst mein Projekt zwei Apps und eine Software. Eine App für den Außendienst (Pflegekräfte) und eine App für die Kund:innen. Hinzu kommt die PC-Software für den Innendienst. In der App für die Pflegekräfte liegt mein Hauptaugenmerk auf einer schnellen und einfachen Bedienung, da die ohnehin knappe Zeit nicht mit langem Tippen zwecks Dokumentation oder Kommunikation verschwendet werden soll. Dies ist in drei verschiedenen Sprachen möglich, um etwaige Barrieren zu beseitigen. Wohingegen ich bei der Kund:innen-App vor allem Wert darauf gelegt habe, komplexe Daten in eine einfache Form zu bringen, sodass auch ältere Menschen im Stande sind, die App zu nutzen und in engem Kontakt mit ihrem Pflegedienst stehen zu können. In der Software geht es vor allem um Vereinheitlichung und Verschlankung von langwierigen und komplexen Prozessen und Vorgängen. Dies geschieht durch eine permanente Live-Synchronisierung (inkl. mit den Apps), digitalisierte Prozesse und eine zielgruppenorientierte und anwenderfreundliche Gestaltung.",
+	// 	"name": "Jennifer Leidolf",
+	// 	"title": "Konzeption und Gestaltung für ambulante Pflegeeinrichtungen"
+	// },
 	{
 		"slug": "johannesbruns",
 		"desc_long": "Das New Life Balance System ist ein fiktives Messsystem, um die Zeitbalance von Arbeit, Sozialem, Muße und öffentlicher Teilhabe zu optimieren. Das spekulative Konzept beschäftigt sich mit einer Zukunftsversion, in der Zeit so wertvoll wie Geld und daher in allen Lebensbereichen außer der Arbeit knapp geworden ist. Um ein ausgeglicheneres und gesünderes Leben herzustellen, wird das New Life Balance System entwickelt, welches die Zeitnutzung von Menschen als Augmented Reality-Infografik permanent sichtbar macht.",
@@ -91,7 +94,8 @@ module.exports = [
 		"slug": "laurareitze",
 		"desc_short": "Visualisierung der Beziehung zwischen Emotionen und der kardiovaskulären Reaktivität",
 		"name": "Laura Reitze",
-		"title": "Science to touch"
+		"title": "Science to touch",
+		"desc_long": "Zu emotional, zu sensibel – den meisten Menschen fällt es schwer, über Emotionen zu reden. Dabei haben gerade Emotionen einen enormen Einfluss auf unsere Gesundheit und das Herz. Das Buch „Momentum: Herz&Emotion“ schafft durch die Verzahnung von Wissenschaft und Design einen forschend-experimentellen Zugang zur Wahrnehmung von Emotionen deren Einfluss auf die Herzgesundheit. Mit interaktiven Elementen und der multisensorischen Erfahrbarkeit von Sinneswahrnehmungen ist es möglich in neue Dimensionen der Wissensvermittlung einzutauchen."
 	},
 	{
 		"slug": "leanaumann",
@@ -103,7 +107,7 @@ module.exports = [
 	{
 		"slug": "lenafuenfsinn",
 		"desc_short": "Wir irren kollektiv",
-		"desc_long": "Wir irren kollektiv",
+		"desc_long": "Im Buch stolpern wir über unsere Verzerrungen. Wir merken, dass wir gar nicht so logisch und rational denken, wie wir immer dachten, sondern dass wir voreingenommen sind, in Schubladen und Stereotypen denken. Durch Abkürzungen beim Verarbeiten von Millionen Informationen, die durch unser Gehirn schwirren, entstehen Fehler, sog. kognitive Verzerrungen. Wir alle haben sie und werden sie nie los. Sie passieren unbewusst. Aber wenn wir sie kennen, können wir sie uns bewusst machen. Und wenn sie in einem Buch beschrieben und visualisiert werden, steigt die Chance, dass wir uns an sie erinnern.",
 		"name": "Lena Fünfsinn",
 		"title": "Verzerrt."
 	},
@@ -143,8 +147,17 @@ module.exports = [
 	{
 		"slug": "nicolechristineseegert",
 		"name": "Nicole Christine Seegert",
-		"titel": "MEAT"
+		"title": "MEAT",
+		"desc_long": "Die Wälder bieten Lebensräume für 80% aller landbewohnenden Tiere und Pflanzen. 2017 verschwanden jedoch weltweit etwa 40 Fußballfelder Regenwald – pro Minute. Wofür? Für die Fleischindustrie. Diese benötigt die Fläche u.a. für den Anbau von Futterpflanzen. Mein Animationsfilm erzählt die Geschichte eines kleinen Jaguars, der sein Zuhause, den Regenwald, durch eine solche Rodung verliert. Hierfür werden animierte Illustrationen mit 3D-Elementen und malerischen Texturen kombiniert."
 	},
+	// {
+	// 	"slug": "oliverkuehl",
+	// 	"name": "Oliver Kühl",
+	// 	"title": "Pen&Paper Vorspiel",
+	// 	"noportrait": true,
+	// 	"desc_short": "Illustrierter Guide für Pen & Paper Anfänger",
+	// 	"desc_long": "Der illustrierte Guide ins Pen&Paper Rollenspiel für Anfänger vor ihrem ersten Abenteuer. Er beinhaltet grundlegendes Wissen über Pen&Paper Rollenspiele, eine Einführung ins Rollenspiel, Tipps für die Erstellung des eigenen Charakters und das Rollenspiel in einer Gruppe. Außerdem auch eine Übersicht über bekannte Rollenspiele und Kontaktmöglichkeiten zu Pen&Paper Communities. Alles gespickt mit Beispielen zur eigenen Entfaltung mit Hinblick auf das eigene Spielerlebnis."
+	// },
 	{
 		"slug": "patrickbeck",
 		"desc_short": "Entwicklung und Gestaltung eines taktischen Kartenspiels",
@@ -152,12 +165,12 @@ module.exports = [
 		"name": "Patrick Beck",
 		"title": "Shit Happens"
 	},
-	{
-		"slug": "pierrerottmaier",
-		"desc_long": "Unter der Berücksichtigung des aktuellen Generationswechsel im Weingut Achenbach habe ich mir zum Anlass genommen eine Neupositionierung durchzuführen. Ich kenne das Weingut schon über 15 Jahre und bin auch mit dem jüngsten Sohn Michael Achenbach sehr gut befreundet. Umso mehr freue ich mich an einem großen neuen Abschnitt im Familienunternehmen mitwirken zu können. Es stand schnell fest, dass ich meine Bachelorarbeit für die Familie Achenbach erstelle. Der Generationswechsel fand nur sehr schleppend statt, da der Vater Gernot bislang an alte Traditionsmuster festhielt und das Weingut gemäß seinen Vorstellungen führte. Doch um dem Weingut einen neuen Anstrich zu verpassen, bringt Frank Achenbach neuen Wind in das Weingut und lässt sich mit hoher Motivation auf folgende Zusammenarbeit ein. Hierfür konzipiere ich einen neuen Imagefilm, eine neue Weinlinie mit neuen Etiketten und einen passenden Flyer.",
-		"name": "Pierre Rottmaier",
-		"title": "Neupositionerung eines Weinguts"
-	},
+	// {
+	// 	"slug": "pierrerottmaier",
+	// 	"desc_long": "Unter der Berücksichtigung des aktuellen Generationswechsel im Weingut Achenbach habe ich mir zum Anlass genommen eine Neupositionierung durchzuführen. Ich kenne das Weingut schon über 15 Jahre und bin auch mit dem jüngsten Sohn Michael Achenbach sehr gut befreundet. Umso mehr freue ich mich an einem großen neuen Abschnitt im Familienunternehmen mitwirken zu können. Es stand schnell fest, dass ich meine Bachelorarbeit für die Familie Achenbach erstelle. Der Generationswechsel fand nur sehr schleppend statt, da der Vater Gernot bislang an alte Traditionsmuster festhielt und das Weingut gemäß seinen Vorstellungen führte. Doch um dem Weingut einen neuen Anstrich zu verpassen, bringt Frank Achenbach neuen Wind in das Weingut und lässt sich mit hoher Motivation auf folgende Zusammenarbeit ein. Hierfür konzipiere ich einen neuen Imagefilm, eine neue Weinlinie mit neuen Etiketten und einen passenden Flyer.",
+	// 	"name": "Pierre Rottmaier",
+	// 	"title": "Neupositionerung eines Weinguts"
+	// },
 	{
 		"slug": "saragorzelec",
 		"desc_short": "Ein digitales Tool für die individuelle Gestaltung und Verwaltung von Bewerbungsverfahren",
@@ -185,10 +198,17 @@ module.exports = [
 		"name": "Sevde Mazineler",
 		"title": "Infinite Scroll"
 	},
-	{
-		"slug": "sheilabreker",
-		"name": "Sheila Breker?",
-		"title": "???"
-	},
-	{ "slug": "theresapartschev", "name": "Theresa Partschev", "title": "KORIOS" }
+	// {
+	// 	"slug": "sheilabreker",
+	// 	"name": "Sheila Breker?",
+	// 	"title": "???"
+	// },
+	{ "slug": "theresapartschev", "name": "Theresa Partschev", "title": "KORIOS" },
 ]
+
+absolventinnen = absolventinnen.map((absolventin) => {
+	absolventin['files'] = fs.readdirSync(`./src/img/projekte/${absolventin.slug}/`)
+	return absolventin
+})
+
+module.exports = absolventinnen

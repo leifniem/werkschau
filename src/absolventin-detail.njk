@@ -20,8 +20,12 @@ eleventyComputed:
 		<div class="text">
 			<p>{{ absolventin.name }}</p>
 			<h1>{{ absolventin.title }}</h1>
-			<p>{{ absolventin.desc_long }}</p>
+			<p>{{ absolventin.desc_short }}</p>
 		</div>
 	</div>
 </div>
-<div class="absolventin-content"></div>
+<div class="absolventin-content">
+	<div class="description">
+		{{ absolventin.desc_long }}
+	</div>
+</div>
