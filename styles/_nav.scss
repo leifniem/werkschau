@@ -6,14 +6,17 @@
 	cursor: pointer;
 	transition: opacity .3s ease-out, filter .3s ease-in-out;
 	margin-left: auto;
+	grid-area: circle;
 
 	&:hover {
 		opacity: 0.5;
 		filter: blur(3px);
 	}
 
-	.menu-white &{
+	.menu-white &,
+	.menu-white .back-arrow {
 		border: 3px solid #fff;
+		box-shadow: 0 0 10px $purple, inset 0 0 10px $purple;
 	}
 }
 

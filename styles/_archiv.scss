@@ -1,6 +1,10 @@
 .archiv-container {
 	padding: 12rem $padding-large $padding-large;
 
+	span {
+		font-weight: bold;
+	}
+
 	.wrapper {
 		display: grid;
 		grid-gap: $padding-medium;

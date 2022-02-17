@@ -41,10 +41,13 @@ eleventyComputed:
 		<div class="description">
 			<h2>{{ absolventin.title }}</h2>
 			{{ absolventin.desc_long }}
+			<p class='betreuung'>
+				{{ absolventin.betreuung }}
+			</p>
 		</div>
 		<div class="media">
 			{% for video in absolventin.videos %}
-				<video controls preload poster="src/img/projekte/{{absolventin.slug}}/{{ video | replace('.mp4', '_thumb.jpg') }}">
+				<video controls preload poster="/img/projekte/{{absolventin.slug}}/{{ video | replace('.mp4', '_thumb.jpg') }}">
 					<source src="/img/projekte/{{ absolventin.slug }}/{{ video }}" type="video/mp4">
 				</video>
 			{% endfor %}

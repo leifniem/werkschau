@@ -10,7 +10,7 @@
 	display: grid;
 	position: relative;
 	align-content: start;
-	padding: $padding-large $padding-big;
+	padding: $padding-large;
 	grid-template-columns: 1fr;
 	grid-template-areas:
 		'content'
@@ -35,7 +35,12 @@
 		.text {
 			z-index: 10;
 			margin-top: 450px;
+			font-size: 75%;
 			grid-area: text;
+
+			@include r(640) {
+				font-size: 100%;
+			}
 		}
 	}
 
@@ -200,11 +205,14 @@
 	padding: 5vw;
 	background: $teal;
 	border-radius: $padding-medium;
-	gap: $padding-large;
 	pointer-events: all;
 
 	label {
 		display: none;
+	}
+
+	> *:not(:last-child) {
+		margin-bottom: $padding-large;
 	}
 
 	@include r(1024) {
@@ -238,12 +246,13 @@
 				transition: transform 0.25s ease-in-out;
 			}
 		}
+
+		> * {
+			flex: 1 0 calc(33.3% - $padding-large);
+		}
 	}
 
 
-	> * {
-		flex: 1 0 calc(33.3% - $padding-large);
-	}
 }
 
 .times {

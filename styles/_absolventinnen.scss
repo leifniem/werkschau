@@ -31,6 +31,10 @@
 		}
 	}
 }
+.arrow-back {
+	place-self: center start;
+	grid-area: circle;
+}
 
 .absolventin-head {
 	width: 100%;
@@ -79,6 +83,10 @@
 		// 	position: sticky;
 		// 	top: $padding-large;
 		// }
+	}
+
+	.betreuung {
+		margin-top: $padding-large;
 	}
 
 	.media {

@@ -26,6 +26,11 @@ h6 {
 
 p {
 	max-width: 60ch;
+
+	.impressum &,
+	.datenschutz & {
+		max-width: none;
+	}
 }
 
 a {

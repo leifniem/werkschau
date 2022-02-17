@@ -5,125 +5,134 @@ bodyClass: 'index transparent-header menu-white no-logo no-title'
 ---
 
 <div class="index-container">
-		<input type="checkbox" id="timecard-toggle" style="position: fixed;" class="hidden-toggle" aria-hidden>
-		<div class="sponsors desktop-only">
-				{% image "src/img/sponsor/hsrm.png", "Logo der Hochschule RheinMain", "(min-width: 1024px) 20vh, 40vw" %}
-				{% image "src/img/sponsor/werkschau.png", "Logo der Werkschau Wiesbaden", "(min-width: 1024px) 20vh, 40vw" %}
-				{% image "src/img/sponsor/bernhardtstiftung.png", "Logo der Bernhardtstiftung", "(min-width: 1024px) 20vh, 40vw" %}
-				{% image "src/img/sponsor/seglogo.png", "Logo der SEG", "(min-width: 1024px) 20vh, 40vw" %}
-		</div>
-		<div class="sponsors desktop-only">
-				{% image "src/img/sponsor/hsrm.png", "", "(min-width: 1024px) 20vh, 40vw" %}
-				{% image "src/img/sponsor/werkschau.png", "", "(min-width: 1024px) 20vh, 40vw" %}
-				{% image "src/img/sponsor/bernhardtstiftung.png", "", "(min-width: 1024px) 20vh, 40vw" %}
-				{% image "src/img/sponsor/seglogo.png", "", "(min-width: 1024px) 20vh, 40vw" %}
-		</div>
-		<div class="key-visual">
-			{% image "src/img/key-visual-min.png", "", "(min-width: 1024px) 50vw, 100vw" %}
-			<label for="menu-toggle" class="desktop-only key-visual-menu">
+	<input type="checkbox" id="timecard-toggle" style="position: fixed;" class="hidden-toggle" aria-hidden>
+	<div class="sponsors desktop-only">
+		{% image "src/img/sponsor/hsrm.png", "Logo der Hochschule RheinMain", "(min-width: 1024px) 20vh, 40vw" %}
+		{% image "src/img/sponsor/werkschau.png", "Logo der Werkschau Wiesbaden", "(min-width: 1024px) 20vh, 40vw" %}
+		{% image "src/img/sponsor/bernhardtstiftung.png", "Logo der Bernhardtstiftung", "(min-width: 1024px) 20vh, 40vw" %}
+		{% image "src/img/sponsor/seglogo.png", "Logo der SEG", "(min-width: 1024px) 20vh, 40vw" %}
+	</div>
+	<div class="sponsors desktop-only">
+		{% image "src/img/sponsor/hsrm.png", "", "(min-width: 1024px) 20vh, 40vw" %}
+		{% image "src/img/sponsor/werkschau.png", "", "(min-width: 1024px) 20vh, 40vw" %}
+		{% image "src/img/sponsor/bernhardtstiftung.png", "", "(min-width: 1024px) 20vh, 40vw" %}
+		{% image "src/img/sponsor/seglogo.png", "", "(min-width: 1024px) 20vh, 40vw" %}
+	</div>
+	<div class="key-visual">
+		{% image "src/img/key-visual-min.png", "", "(min-width: 1024px) 50vw, 100vw" %}
+		<label for="menu-toggle" class="desktop-only key-visual-menu">
 					Press
 			</label>
-		</div>
-		<div class="content">
-				<div class="logo">{% image "src/img/logo.svg", "", "(min-width: 1024px) 50vw, 100vw" %}</div>
-				<div class="text">
-						<h1>Werkschau</h1>
-						<h2>
+	</div>
+	<div class="content">
+		<div class="logo">{% image "src/img/logo.svg", "", "(min-width: 1024px) 50vw, 100vw" %}</div>
+		<div class="text">
+			<h1>Werkschau</h1>
+			<h2>
 								Kommunikationsdesign<br>
 								Wintersemester 21/22
 						</h2>
-						<p class="desktop-only">
+			<p class="desktop-only">
 								Lange war es dunkel in der Kleinen Schwalbacher Straße. Seit gefühlt hunderten Jahren hat kein Mensch hier mehr eine Werkschau gesehen. Dunkle Efeuranken und wilde Dornbüsche erobern das mystische Gebäude. Doch plötzlich: Licht scheint nach außen.
 						</p>
-						<p class="desktop-only">
+			<p class="desktop-only">
 								Eine echte Ausstellung? Ja, eine echte Ausstellung! Die Werkschau kehrt zurück, um einen besonderen Augenblick im Studium zu beleuchten: It is …
 								<br>
 								TIME TO SHINE
 						</p>
-						<p class="desktop-only">
+			<p class="desktop-only">
 								Wir richten die Scheinwerfer auf insgesamt 32 Projekte von 36 Absolvent:innen aus dem Wintersemester 21-22. Das Spektrum reicht vom gebundenen Buch bis hin zur crossmedialen Rauminstallation. Aus den Bereichen Print, Bewegtbild, Interactive, Augmented Reality und mehr ist alles vertreten und wird auf fünf Stockwerken ausgestellt. Unter der Leitung von Prof. Dr. Theo Steiner und Prof. Börries Müller-Büsching werden die Abschlussarbeiten kuratiert und dokumentiert.
 						</p>
-				</div>
 		</div>
-		<div class="timecard-container">
-				<div class="timecard wrapper">
-					<label for="timecard-toggle" class="dektop-only">
-						{% image "src/img/icon/arrow_white.svg", "", "" %}
+	</div>
+	<div class="timecard-container">
+		<div class="timecard wrapper">
+			<label for="timecard-toggle" class="dektop-only">
+				{% image "src/img/icon/arrow_white.svg",
+				"",
+				"" %}
 						Zeit und Ort
 					</label>
-					<div class="times">
-						<div class="col date">
-							<span>18</span>
-							<span class="dash">-</span>
-							<span>20</span>
-							<span class="bottom">Feburar</span>
-						</div>
-						<div class="col date">
-							<span class="top">FR</span>
-							<span>14</span>
-							<span class="dash">-</span>
-							<span>20</span>
-							<span class="bottom">Uhr</span>
-						</div>
-						<div class="col date">
-							<span class="top">SA</span>
-							<span>12</span>
-							<span class="dash">-</span>
-							<span>20</span>
-							<span class="bottom">Uhr</span>
-						</div>
-						<div class="col date">
-							<span class="top">SO</span>
-							<span>12</span>
-							<span class="dash">-</span>
-							<span>18</span>
-							<span class="bottom">Uhr</span>
-						</div>
-					</div>
-						<div class="adress">
-							{% image "src/img/icon/location.svg", "Ort", "" %}
+			<h2 class="mobile-only">
+				Dates<br>
+				Time<br>
+				Location<br>
+			</h2>
+			<div class="times">
+				<div class="col date">
+					<span>18</span>
+					<span class="dash">-</span>
+					<span>20</span>
+					<span class="bottom">Feburar</span>
+				</div>
+				<div class="col date">
+					<span class="top">FR</span>
+					<span>14</span>
+					<span class="dash">-</span>
+					<span>20</span>
+					<span class="bottom">Uhr</span>
+				</div>
+				<div class="col date">
+					<span class="top">SA</span>
+					<span>12</span>
+					<span class="dash">-</span>
+					<span>20</span>
+					<span class="bottom">Uhr</span>
+				</div>
+				<div class="col date">
+					<span class="top">SO</span>
+					<span>12</span>
+					<span class="dash">-</span>
+					<span>18</span>
+					<span class="bottom">Uhr</span>
+				</div>
+			</div>
+			<div class="adress">
+				{% image "src/img/icon/location.svg",
+				"Ort",
+				"" %}
 							Kleine Schwalbacher Straße 8<br>
 							65183 Wiesbaden
 						</div>
-						<div class="rona">
-							<h2>
+			<div class="rona">
+				<h2 class="desktop-only">
 								Dates<br>
 								Time<br>
 								Location<br>
-							</h2>
-							<p class="m-centered">
+				</h2>
+				<p class="m-centered">
 								Leider hat ein heimtückisches Virus das Schloss verwünscht und nicht alle dürfen jederzeit eintreten: Nur unter 2G+ Bedingungen öffnen sich die Burgmauern für eine gedeckelte Anzahl an Gästen. Maximal 100 Personen im Gebäude!<br>
-								<br>
+					<br>
 								Es gelten die allgemeinen Corona-Regeln: Abstand, Hygiene, Maske.
 							</p>
-						</div>
-						<div class="text">
-							<p class="mobile-only m-centered">
+			</div>
+			<div class="text">
+				<p class="mobile-only m-centered">
 									Lange war es dunkel in der Kleinen Schwalbacher Straße. Seit gefühlt hunderten Jahren hat kein Mensch hier mehr eine Werkschau gesehen. Dunkle Efeuranken und wilde Dornbüsche erobern das mystische Gebäude. Doch plötzlich: Licht scheint nach außen.
 							</p>
-							<p class="mobile-only m-centered">
+				<p class="mobile-only m-centered">
 									Eine echte Ausstellung? Ja, eine echte Ausstellung! Die Werkschau kehrt zurück, um einen besonderen Augenblick im Studium zu beleuchten: It is …
 									<br>
 									TIME TO SHINE
 							</p>
-							<p class="mobile-only m-centered">
-									Wir richten die Scheinwerfer auf insgesamt 32 Projekte von 36 Absolvent:innen aus dem Wintersemester 21-22. Das Spektrum reicht vom gebundenen Buch bis hin zur crossmedialen Rauminstallation. Aus den Bereichen Print, Bewegtbild, Interactive, Augmented Reality und mehr ist alles vertreten und wird auf fünf Stockwerken ausgestellt. Unter der Leitung von Prof. Dr. Theo Steiner und Prof. Börries Müller-Büsching werden die Abschlussarbeiten kuratiert und dokumentiert.
+				<p class="mobile-only m-centered">
+									Wir richten die Scheinwerfer auf insgesamt 31 Projekte von 35 Absolvent:innen aus dem Wintersemester 21-22. Das Spektrum reicht vom gebundenen Buch bis hin zur crossmedialen Rauminstallation. Aus den Bereichen Print, Bewegtbild, Interactive, Augmented Reality und mehr ist alles vertreten und wird auf fünf Stockwerken ausgestellt. Unter der Leitung von Prof. Dr. Theo Steiner und Prof. Börries Müller-Büsching werden die Abschlussarbeiten kuratiert und dokumentiert.
 							</p>
-						</div>
-						<div class="sponsors mobile-only">
-								{% image "src/img/sponsor/hsrm.png", "Logo der Hochschule RheinMain", "(min-width: 1024px) 20vh, 40vw" %}
-								{% image "src/img/sponsor/werkschau.png", "Logo der Werkschau Wiesbaden", "(min-width: 1024px) 20vh, 40vw" %}
-								{% image "src/img/sponsor/bernhardtstiftung.png", "Logo der Bernhardtstiftung", "(min-width: 1024px) 20vh, 40vw" %}
-								{% image "src/img/sponsor/seglogo.png", "Logo der SEG", "(min-width: 1024px) 20vh, 40vw" %}
-						</div>
-						<footer class="site-footer mobile-only">
-							<a href="#">
+			</div>
+			<div class="sponsors mobile-only">
+				{% image "src/img/sponsor/hsrm.png", "Logo der Hochschule RheinMain", "(min-width: 1024px) 20vh, 40vw" %}
+				{% image "src/img/sponsor/werkschau.png", "Logo der Werkschau Wiesbaden", "(min-width: 1024px) 20vh, 40vw" %}
+				{% image "src/img/sponsor/bernhardtstiftung.png", "Logo der Bernhardtstiftung", "(min-width: 1024px) 20vh, 40vw" %}
+				{% image "src/img/sponsor/seglogo.png", "Logo der SEG", "(min-width: 1024px) 20vh, 40vw" %}
+			</div>
+			<footer class="site-footer mobile-only">
+				<a href="#">
 								Datenschutz
 							</a>
-							<a href="#">
+				<a href="#">
 								Impressum
 							</a>
-						</footer>
-				</div>
+			</footer>
 		</div>
+	</div>
 </div>

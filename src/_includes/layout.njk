@@ -8,7 +8,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
-		<meta name="msapplication-config" content="/browserconfig.xml" />
+		<meta name="msapplication-config" content="/browserconfig.xml"/>
 		<meta name="msapplication-TileColor" content="#261B43">
 		<meta name="theme-color" content="#261B43">
 		<meta name="description" content="Die Absolventinnen im Studiengang Kommunikationsdesign des Wintersemesters 2021/2022 stellen ihre Arbeiten vor."/>
@@ -21,9 +21,11 @@
 		<link rel="stylesheet" href="https://use.typekit.net/ltv2twx.css">
 		<link rel="stylesheet" href="/@root/styles/styles.scss">
 		{{ __slinkity.head | safe }}
-		<title>{{ title }}{% if page.url != '/' -%}
+		<title>{{ title }}
+			{% if page.url != '/' -%}
 			&nbsp;— TIME TO SHINE — Werkschau Wiesbaden
-		{%- endif %}</title>
+		{%- endif %}
+		</title>
 	</head>
 	<body class="{{ bodyClass }}">
 		<header class="site-header">
@@ -35,9 +37,14 @@
 					{% image "src/img/key-visual-blur-min.png", "", "120px" %}
 				{% endif %}
 			</a>
-			<label for="menu-toggle">
-				<div class="circle"></div>
-			</label>
+			{% if bodyClass.includes('absolvent-in') %}
+				<a href="javascript:history.back()" class="arrow-back">
+					{% image "src/img/icon/arrowleft.svg",
+					"",
+					"" %}
+				</a>
+			{% endif %}
+			<label for="menu-toggle" class="circle"></label>
 			{% if not bodyClass.includes('no-title') %}
 				<h1 class="page-title">{{ title }}</h1>
 			{% endif %}

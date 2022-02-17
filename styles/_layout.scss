@@ -5,10 +5,15 @@
 	right: 0;
 	z-index: 100;
 	padding: $padding-large;
-	background: rgba(#fff, .9);
+	background: rgba(#fff, 0.9);
 	display: grid;
 	justify-content: end;
 	pointer-events: none;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		'logo circle'
+		'_ title';
 
 	> * {
 		pointer-events: all;
@@ -19,14 +24,11 @@
 		background: rgba(#fff, 0.7);
 	}
 
-	@include r(1024) {
-		grid-template-columns: auto 1fr;
-	}
-
 	.page-title {
 		text-align: right;
 		margin: $padding-medium 0 0 0;
 		hyphens: auto;
+		grid-area: title;
 	}
 
 	.transparent-header & {
@@ -36,7 +38,9 @@
 	}
 
 	.logo-header {
-		width: 25vw;
+		width: 6rem;
+		margin-right: $padding-large;
+		grid-area: logo;
 		grid-row: span 2;
 		max-height: 100%;
 		position: relative;
@@ -45,9 +49,12 @@
 		> * {
 			position: absolute;
 			top: 0;
+			width: 100%;
+			height: auto;
 		}
 
-		img, picture {
+		img,
+		picture {
 			height: 100%;
 			width: auto;
 		}
