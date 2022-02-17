@@ -1,0 +1,21 @@
+---
+title: Projekte
+layout: layout
+bodyClass: projekte transparent-header menu-white
+---
+
+<div class="projekte-container wrapper">
+	<div class="grid-2col">
+		{% for absolvent in projekte %}
+			<a href="/absolventinnen/{{ absolvent.slug }}" class="projekt grid-2col">
+				<div class="thumbnail">
+					{% image "src/img/projekte/"+ absolvent.slug + "/Main.jpg", "", "(min-width: 30em) 25vw, 100vw" %}
+				</div>
+				<div class="text">
+					<p>{{ absolvent.name }}</p>
+					<h2>{{ absolvent.title }}</h2>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+</div>

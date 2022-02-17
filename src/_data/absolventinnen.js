@@ -2,13 +2,6 @@ const fs = require('fs')
 
 let absolventinnen = [
 	{
-		"slug": "annasophieschneider",
-		"desc_short": "Illustrierte Zeitreise für junge Leser",
-		"desc_long": "„Alles platt in der Platte“ ist eine illustrierte Zeitreise für junge Leser. Das Buch beschäftigt sich mit der DDR und soll Jugendliche dazu animieren sich mit diesem, historisch sehr wichtigen Thema auseinander zu setzen. Informationsgrundlage des selbst verfassten Textes sind Erzählungen, Fotos und Original-Dokumente meiner Familie, welche aus der ehemaligen DDR stammt. Auch wenn das Buch ursprünglich für Jugendliche verfasst ist, werden sicher \"Ex-Ossis\" an der ein oder anderen Stelle schmunzeln, wenn es beispielsweise um \"Herrn Fuchs und Frau Elster\" oder die \"Schulmilch\" geht.",
-		"name": "Anna Sophie Schneider",
-		"title": "Alles platt in der Platte? – Kindheit und Jugend in der DDR"
-	},
-	{
 		"slug": "annalenaadrian",
 		"desc_short": "Corporate Design einer nachhaltigen Schmuckmarke",
 		"desc_long": "Die Vision von ENSO ist es nachhaltigen Schmuck mit dem Fokus auf Ringe zu kreieren und die Grenzen zwischen den Geschlechtern zu verwischen. Die Marke zelebriert die Schönheit der Imperfektion. Jeder Ring ist ein Unikat und besteht zu 100% aus Flaschen aus recyceltem Altglas. Bei ENSO ist Vielfalt eine Selbstverständlichkeit und Nachhaltigkeit steht im Mittelpunkt.",
@@ -16,27 +9,36 @@ let absolventinnen = [
 		"title": "ENSO"
 	},
 	{
+		"slug": "annasophieschneider",
+		"desc_short": "Illustrierte Zeitreise für junge Leser",
+		"desc_long": "„Alles platt in der Platte“ ist eine illustrierte Zeitreise für junge Leser. Das Buch beschäftigt sich mit der DDR und soll Jugendliche dazu animieren sich mit diesem, historisch sehr wichtigen Thema auseinander zu setzen. Informationsgrundlage des selbst verfassten Textes sind Erzählungen, Fotos und Original-Dokumente meiner Familie, welche aus der ehemaligen DDR stammt. Auch wenn das Buch ursprünglich für Jugendliche verfasst ist, werden sicher \"Ex-Ossis\" an der ein oder anderen Stelle schmunzeln, wenn es beispielsweise um \"Herrn Fuchs und Frau Elster\" oder die \"Schulmilch\" geht.",
+		"name": "Anna Sophie Schneider",
+		"title": "Alles platt in der Platte? – Kindheit und Jugend in der DDR"
+	},
+	{
 		"slug": "denisegoldmann",
-		"desc_long": "Der animierte Kurzfilm setzt sich auf experimentelle Weise mit dem Prozess des Vergessens auseinander. Er behandelt die Geschichte einer Frau, die an  Lewy-Body-Demenz erkrankt ist. Ihr Mann erzählt in dem Film, was die Diagnose  für ihrer beider Leben bedeutet hat, wie er einen Abschied nach dem anderen erlebt  und es plötzlich keine Zukunftspläne mehr gibt. Die handgezeichneten Animationen  sind eine visuelle Interpretation dessen, was er erfährt. Sie erweitern das Erzählte  und lassen einen tiefer in seine Geschichte eintauchen.\n Das Projekt wird gefördert von der HessenFilm und Medien GmbH.",
+		"desc_long": "Der animierte Kurzfilm setzt sich auf experimentelle Weise mit dem Prozess des Vergessens auseinander. Er behandelt die Geschichte einer Frau, die an  Lewy-Body-Demenz erkrankt ist. Ihr Mann erzählt in dem Film, was die Diagnose  für ihrer beider Leben bedeutet hat, wie er einen Abschied nach dem anderen erlebt  und es plötzlich keine Zukunftspläne mehr gibt. Die handgezeichneten Animationen  sind eine visuelle Interpretation dessen, was er erfährt. Sie erweitern das Erzählte und lassen einen tiefer in seine Geschichte eintauchen.\n Das Projekt wird gefördert von der HessenFilm und Medien GmbH.",
 		"name": "Denise Goldmann",
+		"desc_short": "Animierter Kurzfilm über das Vergessen",
 		"title": "Experimentalfilm über das Erinnern und Vergessen"
 	},
 	{
 		"slug": "dunjavitasovic",
 		"name": "Dunja Vitasovic",
+		"desc_short": "Illustriertes Buch",
 		"title": "Tierische Beleidigungen,und warum diese nicht wahr sind",
-		"desc_long": "Tierbeleidigungen gehören zu unserem alltäglichen Sprachgebrauch. Doch wenig Menschen wissen woher diese Ausdrücke stammen und ob sie überhaupt korrekt sind. Durch das Benutzen von tierischen Schimpfwörtern verbreiten sich unwahre Vorurteile, welche dazu führen, dass Menschen Tiere als minderwertige Lebewesen ansehen. Mein Buch \"Tierische Beleidigungen, und warum diese nicht wahr sind\" dient zur Aufklärung von falsch benutzten Beleidigungen mit Tiernamen. Verbunden mit lustigen Illustrationen und einer einfachen Tonality soll es die/den Leser/in Spaß machen das Buch zu lesen."
+		"desc_long": "Tierbeleidigungen gehören zu unserem alltäglichen Sprachgebrauch. Doch wenige Menschen wissen woher diese Ausdrücke stammen und ob sie überhaupt korrekt sind. Durch das Benutzen von tierischen Schimpfwörtern verbreiten sich unwahre Vorurteile, welche dazu führen, dass Menschen Tiere als minderwertige Lebewesen ansehen. Mein Buch \"Tierische Beleidigungen, und warum diese nicht wahr sind\" dient zur Aufklärung von falsch benutzten Beleidigungen mit Tiernamen. Verbunden mit lustigen Illustrationen und einer einfachen Tonality soll es die/den Leser/in Spaß machen das Buch zu lesen."
 	},
 	{
 		"slug": "emreaydin",
 		"desc_short": "Eine illustrierte Ausgabe einer Kurzgeschichte von Haruki Murakami",
 		"desc_long": "Meine Bachelorthesis ist eine illustrierte Ausgabe der Kurzgeschichte \"Der Elefant verschwindet\" von Haruki Murakami. Ich habe mich für seine Kurzgeschichte entschieden, da seine Geschichten sehr amüsant und erfrischend sind und auch viel Spielraum für coole Illustrationen darbieten. Die Leser sollen in die geheimnisvolle Geschichte des Elefanten eintauchen und durch die Illustrationen noch mehr Spaß am Lesen haben.",
 		"name": "Emre Aydin",
-		"title": "Eine illustrierte Ausgabe einer Kurzgeschichte von Haruki Murakami"
+		"title": "Der Elefant verschwindet"
 	},
 	{
 		"slug": "evafischerlarareitz",
-		"desc_short": "eine interaktive Rauminstallation zum Thema Kommunikation",
+		"desc_short": "Eine interaktive Rauminstallation zum Thema Kommunikation",
 		"name": "Eva Fischer & Lara Reitz",
 		"title": "mal makina",
 		"desc_long": "Die interaktive Rauminstallation verfremdet den Diskurs zweier Dialogpartner*innen in Echtzeit mittels audiovisueller Störfilter und erschwert damit die Kommunikation. Es stehen sich zwei Personen gegenüber. Zwischen ihnen befindet sich eine Art Blackbox. Sie hören und sehen sich jedoch nur über Kopfhörer bzw. Monitore. Sich selbst sehen sie dabei nicht. Die Gesichter werden mittels AR dezent verändert, dass der Dialog durch kleine, wichtige Details (z.B. fehlender Blickkontakt) gestört wird."
@@ -71,6 +73,7 @@ let absolventinnen = [
 	},
 	{
 		"slug": "johannesbruns",
+		"desc_short": "Augmented Reality Konzeptstudie",
 		"desc_long": "Das New Life Balance System ist eine Zeitwaage, die der Messung von Work-Life-Balance dient. Dieses Augmented Reality Tool, ist eine Konzeptstudie für eine spezielle Zukunftsvision. In dieser Zukunft definieren Menschen ihren Wohlstand und ihren sozialen Status nicht mehr durch materielle Güter, sondern durch die Zeit, um ein schönes Leben zu führen. Das spekulative Design soll anregen, über den Zusammenhang von erlebter Zeit, Wohlstand, Statussymbolen und Social Credit Systemen nachzudenken.",
 		"name": "Johannes Bruns",
 		"title": "Das New Life Balance System",
@@ -91,7 +94,7 @@ let absolventinnen = [
 	},
 	{
 		"slug": "laurapeters",
-		"desc_short": "eine Aufklärungskampagne über Rassismus in der Dermatologie",
+		"desc_short": "Eine Aufklärungskampagne über Rassismus in der Dermatologie",
 		"desc_long": "Wusstest du, dass die medizinische Fachliteratur und Lehre Hauterkrankungen zu etwa 90% auf weißer Haut betrachtet? Und das, obwohl sich die Erscheinungsbilder von Symptomen und Hauterkrankungen auf den verschiedenen Hauttypen deutlich unterscheiden. Die Folgen sind Unter- und Fehldiagnosen bei Patient:innen mit dunkler Haut.\n Um Medizinstudierende und angehende Dermatolog:innen schon während ihrer Ausbildung für dieses Leck in der Lehre zu sensibilisieren, habe ich eine Aufklärungskampagne gestaltet.",
 		"name": "Laura Peters",
 		"title": "Rassismus geht unter die Haut "
@@ -112,14 +115,14 @@ let absolventinnen = [
 	},
 	{
 		"slug": "lenafuenfsinn",
-		"desc_short": "Wir irren kollektiv",
+		"desc_short": "Editorial Design zum Thema Wahrnehmung",
 		"desc_long": "Im Buch stolpern wir über unsere Verzerrungen. Wir merken, dass wir gar nicht so logisch und rational denken, wie wir immer dachten, sondern dass wir voreingenommen sind, in Schubladen und Stereotypen denken. Durch Abkürzungen beim Verarbeiten von Millionen Informationen, die durch unser Gehirn schwirren, entstehen Fehler, sog. kognitive Verzerrungen. Wir alle haben sie und werden sie nie los. Sie passieren unbewusst. Aber wenn wir sie kennen, können wir sie uns bewusst machen. Und wenn sie in einem Buch beschrieben und visualisiert werden, steigt die Chance, dass wir uns an sie erinnern.",
 		"name": "Lena Fünfsinn",
 		"title": "Verzerrt."
 	},
 	{
 		"slug": "lillywehlmann",
-		"desc_short": "eine Reaktion auf den Klimawandel im urbanen Raum",
+		"desc_short": "Eine Reaktion auf den Klimawandel im urbanen Raum",
 		"desc_long": "Meine Bachelor-Thesis handelt von den Problemen mit denen Metropolen sich belasten und von einem simplen, basisdemokratischen Lösungsweg für eine blühende Zukunft. \"Verticity\" ist eine Plattform, auf welcher pflanzwillige Stadtbewohner*innen und Hausbesitzer*innen mit ungenutzter Fassadenfläche zusammenfinden und gemeinsam mit uns für grünere Städte, sauberere Luft und rundum mehr Wohlbefinden sorgen. Eine Website, sowie gekoppelte Werbemaßnahmen informieren und bewegen User*innen dazu mitzuwirken.",
 		"name": "Lilly Wehlmann",
 		"title": "GRÜNER"
@@ -128,10 +131,12 @@ let absolventinnen = [
 		"slug": "luisamariazangardi",
 		"name": "Luisa Maria Zangardi",
 		"title": "Herbsttrompeten",
+		"desc_short": "Typographisches Editorial Design",
 		"desc_long": "Herbsttrompeten ist eine Geschichte über Einsamkeit im Alter. Rosemarie lebt alleine. Durch ihre kauzige Art fällt es ihr schwer, Kontakte zu knüpfen. Eines Tages beschließt sie, ihre Einsamkeit auf ungewöhnliche Art zu beenden. Mit Hilfe einer Dating-App will sie ein Enkelkind finden. Fotos und Typo sollen die Lesenden in die Geschichte ziehen. Darstellen, dass sie nicht arg anders als die Protagonistin sind und zeigen: du könntest Rosemarie sein! Auch dich könnte Einsamkeit treffen. Oder bist du sogar schon einsam?"
 	},
 	{
 		"slug": "luisekummer",
+		"desc_short": "Crossmediale Installation",
 		"desc_long": "Durch die globale Krise, die strengen Kontaktbeschränkungen und soziale Isolation, leiden die meisten Menschen unter einer großen psychischen Belastung. Dies hinterlässt Spuren im gesellschaftlichen Miteinander. Gerade in diesen trüben Zeiten ist es wichtig für klare Sicht zu sorgen: Was sind meine Werte? Wie begegne ich Freund*innen, Familie oder Fremden? Wo liegen meine Stärken und wo meine Schwächen? Was kann ich Gutes aus der Krisenzeit mitnehmen?\n\"Mit gesundem Abstand\" ist eine crossmediale Installation, die zur Selbstreflexion einlädt. Mithilfe von ausgewählten Fragen sollen Menschen dazu ermutigt werden, sich mit sich selbst auseinander zusetzen. Die daraus neu gewonnenen Erkenntnisse können die Resilienz stärken und aufbauen. Das Ziel des Projektes ist, einen Teil dazu beizutragen, die psychische Gesundheit der Menschen in der Krise zu unterstützen, indem mit gesundem Abstand auf eine außergewöhnliche Zeit geblickt wird.",
 		"name": "Luise Kummer",
 		"title": "Mit gesundem Abstand",
@@ -141,7 +146,8 @@ let absolventinnen = [
 		"slug": "matswitte",
 		"desc_long": "Das Archiv der Artefakte des Androzän präsentiert erstmals archäologische Funde aus der fernen Zeit des Androzän. Im Androzän war die genetische Ausprägung biologischer Geschlechtsmerkmale ein wichtiger Identifikationsfaktor, auf dessen Grundlage zwischen Herrschenden und Beherrschten unterschieden wurde. Ein komplexes System aus sozialen und technischen Mechanismen diente der Unterdrückung der Frauen durch die Männer. Dazu stellen wir anhand von Fundstücken einige Praxisbeispiele vor.",
 		"name": "Mats Witte",
-		"title": "Archiv der Artefakte des Androzän"
+		"title": "Archiv der Artefakte des Androzän",
+		"desc_short": "Mixed Media Installation"
 	},
 	{
 		"slug": "michelleborsarileoniesybertz",
@@ -154,6 +160,7 @@ let absolventinnen = [
 		"slug": "nicolechristineseegert",
 		"name": "Nicole Christine Seegert",
 		"title": "MEAT",
+		"desc_short": "Animierter 2D-3D-Kurzfilm",
 		"desc_long": "Die Wälder bieten Lebensräume für 80% aller landbewohnenden Tiere und Pflanzen. 2017 verschwanden jedoch weltweit etwa 40 Fußballfelder Regenwald – pro Minute. Wofür? Für die Fleischindustrie. Diese benötigt die Fläche u.a. für den Anbau von Futterpflanzen. Mein Animationsfilm erzählt die Geschichte eines kleinen Jaguars, der sein Zuhause, den Regenwald, durch eine solche Rodung verliert. Hierfür werden animierte Illustrationen mit 3D-Elementen und malerischen Texturen kombiniert."
 	},
 	// {
@@ -171,12 +178,13 @@ let absolventinnen = [
 		"name": "Patrick Beck",
 		"title": "Shit Happens"
 	},
-	// {
-	// 	"slug": "pierrerottmaier",
-	// 	"desc_long": "Unter der Berücksichtigung des aktuellen Generationswechsel im Weingut Achenbach habe ich mir zum Anlass genommen eine Neupositionierung durchzuführen. Ich kenne das Weingut schon über 15 Jahre und bin auch mit dem jüngsten Sohn Michael Achenbach sehr gut befreundet. Umso mehr freue ich mich an einem großen neuen Abschnitt im Familienunternehmen mitwirken zu können. Es stand schnell fest, dass ich meine Bachelorarbeit für die Familie Achenbach erstelle. Der Generationswechsel fand nur sehr schleppend statt, da der Vater Gernot bislang an alte Traditionsmuster festhielt und das Weingut gemäß seinen Vorstellungen führte. Doch um dem Weingut einen neuen Anstrich zu verpassen, bringt Frank Achenbach neuen Wind in das Weingut und lässt sich mit hoher Motivation auf folgende Zusammenarbeit ein. Hierfür konzipiere ich einen neuen Imagefilm, eine neue Weinlinie mit neuen Etiketten und einen passenden Flyer.",
-	// 	"name": "Pierre Rottmaier",
-	// 	"title": "Neupositionerung eines Weinguts"
-	// },
+	{
+		"slug": "pierrerottmaier",
+		"desc_long": "Unter der Berücksichtigung des aktuellen Generationswechsel im Weingut Achenbach habe ich mir zum Anlass genommen eine Neupositionierung durchzuführen. Ich kenne das Weingut schon über 15 Jahre und bin auch mit dem jüngsten Sohn Michael Achenbach sehr gut befreundet. Umso mehr freue ich mich an einem großen neuen Abschnitt im Familienunternehmen mitwirken zu können. Es stand schnell fest, dass ich meine Bachelorarbeit für die Familie Achenbach erstelle. Der Generationswechsel fand nur sehr schleppend statt, da der Vater Gernot bislang an alte Traditionsmuster festhielt und das Weingut gemäß seinen Vorstellungen führte. Doch um dem Weingut einen neuen Anstrich zu verpassen, bringt Frank Achenbach neuen Wind in das Weingut und lässt sich mit hoher Motivation auf folgende Zusammenarbeit ein. Hierfür konzipiere ich einen neuen Imagefilm, eine neue Weinlinie mit neuen Etiketten und einen passenden Flyer.",
+		"name": "Pierre Rottmaier",
+		"desc_short": "Neupositionerung eines Weinguts",
+		"title": "Achenbach Weingut"
+	},
 	{
 		"slug": "saragorzelec",
 		"desc_short": "Ein digitales Tool für die individuelle Gestaltung und Verwaltung von Bewerbungsverfahren",
@@ -201,6 +209,7 @@ let absolventinnen = [
 	{
 		"slug": "sevdemazineler",
 		"desc_long": "Die Social Media Algorithmen entscheiden, welche Informationen dir täglich angezeigt und welche aussortiert werden.\"Infinite Scroll\" zeigt dir einen Ausschnitt der etlichen Bereiche, in denen Algorithmen dir maßgeschneiderte Empfehlungen machen und die daraus resultierenden Folgen. Ist die Pandemie wirklich nur eine Lüge der Echsenmenschen oder bist du Fake News zum Opfer gefallen? Hat Big Data Einfluss auf dein Denken; wenn ja, was ist ihr Ziel? Lass dich überraschen und begib dich in die analoge Unendlichkeit.",
+		"desc_short": "Editorial Design zum Thema des Einflusses von Social Media",
 		"name": "Sevde Mazineler",
 		"title": "Infinite Scroll"
 	},
@@ -213,7 +222,13 @@ let absolventinnen = [
 
 		gefördert von Hessenfilm`
 	},
-	{ "slug": "theresapartschev", "name": "Theresa Partschev", "title": "KORIOS", "desc_long": "Wir alle wissen, dass jedes Kind ganz eigene, fantastische Talente und Eigenschaften aufweist. Doch dieses Potenzial bleibt in unserem traditionellen Bildungssystem oftmals links liegen. KORIOS ist eine Onlineplattform, die genau das ausgleichen möchte: Sie bietet Kurse an, die das Spiel Dungeons & Dragons nutzen, um die individuellen Talente, den Charakter und das emotionale Bewusstsein von Kindern zu stärken." },
+	{
+		"slug": "theresapartschev",
+		"name": "Theresa Partschev",
+		"title": "KORIOS",
+		"desc_short": "Gestaltung einer Onlineplattform zur Förderung von Kindern",
+		"desc_long": "Wir alle wissen, dass jedes Kind ganz eigene, fantastische Talente und Eigenschaften aufweist. Doch dieses Potenzial bleibt in unserem traditionellen Bildungssystem oftmals links liegen. KORIOS ist eine Onlineplattform, die genau das ausgleichen möchte: Sie bietet Kurse an, die das Spiel Dungeons & Dragons nutzen, um die individuellen Talente, den Charakter und das emotionale Bewusstsein von Kindern zu stärken."
+	},
 ]
 
 absolventinnen = absolventinnen.map((absolventin) => {
@@ -224,7 +239,7 @@ absolventinnen = absolventinnen.map((absolventin) => {
 		const file = files[i];
 		if (file.includes('.mp4')) {
 			absolventin.videos.push(file)
-		} else if (!file.includes('_thumb') && file.includes('.jpg') ){
+		} else if (!file.includes('_thumb') && file.includes('.jpg')) {
 			absolventin.images.push(file)
 		}
 	}

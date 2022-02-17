@@ -1,0 +1,60 @@
+.projekte {
+	background: var(--gradient-linear);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+
+	a, .site-header {
+		color: rgba(#fff, .7);
+	}
+}
+
+.projekte-container .grid-2col{
+	grid-gap: $padding-big;
+}
+
+.projekt {
+	width: 100%;
+	display: grid;
+	transition: opacity 0.5s ease-in-out;
+	grid-template-columns: repeat(2, 1fr);
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	.thumbnail{
+		position: relative;
+		// height: 25vw;
+		// max-height: 24rem;
+		aspect-ratio: .75;
+		width: 100%;
+		overflow: hidden;
+
+		picture {
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+		}
+
+		img {
+			max-width: none;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		h2 {
+			margin-top: $padding-medium;
+			hyphens: auto;
+			letter-spacing: normal;
+		}
+	}
+}
