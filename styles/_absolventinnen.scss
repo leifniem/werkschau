@@ -87,6 +87,11 @@
 
 	.betreuung {
 		margin-top: $padding-large;
+
+		h3 {
+			margin-top: $padding-medium;
+			margin-bottom: 0;
+		}
 	}
 
 	.media {

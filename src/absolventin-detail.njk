@@ -41,9 +41,9 @@ eleventyComputed:
 		<div class="description">
 			<h2>{{ absolventin.title }}</h2>
 			{{ absolventin.desc_long }}
-			<p class='betreuung'>
-				{{ absolventin.betreuung }}
-			</p>
+			<div class="betreuung">
+				{{ absolventin.betreuung | safe }}
+			</div>
 		</div>
 		<div class="media">
 			{% for video in absolventin.videos %}

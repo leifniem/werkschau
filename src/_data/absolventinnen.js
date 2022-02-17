@@ -10,8 +10,8 @@ let absolventinnen = [
 		name: 'Anna Lena Adrian',
 		title: 'ENSO',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. Kai Staudacher`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig
+			<h3>Co-Referent</h3> Dipl.-Des. Kai Staudacher`
 	},
 	{
 		slug: 'annasophieschneider',
@@ -29,8 +29,8 @@ let absolventinnen = [
 		desc_short: 'Animierter Kurzfilm über das Vergessen',
 		title: 'Experimentalfilm über das Erinnern und Vergessen',
 		betreuung:
-			`Referent: Prof. Börries Müller-Büsching
-			Co-Referentin: Prof. Dr. Cornelia Freitag-Schubert`
+			`<h3>Referent</h3> Prof. Börries Müller-Büsching<br>
+			<h3>Co-Referentin</h3> Prof. Dr. Cornelia Freitag-Schubert`
 	},
 	{
 		slug: 'dunjavitasovic',
@@ -40,8 +40,8 @@ let absolventinnen = [
 		desc_long:
 			'Tierbeleidigungen gehören zu unserem alltäglichen Sprachgebrauch. Doch wenig Menschen wissen woher diese Ausdrücke stammen und ob sie überhaupt korrekt sind. Durch das Benutzen von tierischen Schimpfwörtern verbreiten sich unwahre Vorurteile, welche dazu führen, dass Menschen Tiere als minderwertige Lebewesen ansehen. Mein Buch \"Tierische Beleidigungen, und warum diese nicht wahr sind\" dient zur Aufklärung von falsch benutzten Beleidigungen mit Tiernamen. Verbunden mit lustigen Illustrationen und einer einfachen Tonality soll es dem/der Leser/in Spaß machen das Buch zu lesen.',
 		betreuung:
-			`Referentin: Prof. Dr. Cornelia Freitag-Schubert
-			Co-Referent: Prof. Dr. Boris Röhrl`
+			`<h3>Referentin</h3> Prof. Dr. Cornelia Freitag-Schubert<br>
+			<h3>Co-Referent</h3> Prof. Dr. Boris Röhrl`
 	},
 	{
 		slug: 'emreaydin',
@@ -52,8 +52,8 @@ let absolventinnen = [
 		name: 'Emre Aydin',
 		title: 'Der Elefant verschwindet',
 		betreuung:
-			`Referent: Prof. Dr. Boris Röhrl
-			Co-Referentin: Prof. Dr. Cornelia Freitag-Schubert`
+			`<h3>Referent</h3> Prof. Dr. Boris Röhrl<br>
+			<h3>Co-Referentin</h3> Prof. Dr. Cornelia Freitag-Schubert`
 	},
 	{
 		slug: 'evafischerlarareitz',
@@ -63,8 +63,8 @@ let absolventinnen = [
 		desc_long:
 			'Die interaktive Rauminstallation verfremdet den Diskurs zweier Dialogpartner*innen in Echtzeit mittels audiovisueller Störfilter und erschwert damit die Kommunikation. Es stehen sich zwei Personen gegenüber. Zwischen ihnen befindet sich eine Art Blackbox. Sie hören und sehen sich jedoch nur über Kopfhörer bzw. Monitore. Sich selbst sehen sie dabei nicht. Die Gesichter werden mittels AR dezent verändert, dass der Dialog durch kleine, wichtige Details (z.B. fehlender Blickkontakt) gestört wird.',
 		betreuung:
-			`Referent: Prof. Dr. Theo Steiner
-			Co-Referent: Dipl.-Des. David Bascom`
+			`<h3>Referent</h3> Prof. Dr. Theo Steiner<br>
+			<h3>Co-Referent</h3> Dipl.-Des. David Bascom`
 	},
 	{
 		slug: 'fynnfischer',
@@ -74,8 +74,8 @@ let absolventinnen = [
 		name: 'Fynn Fischer',
 		title: 'Conscious',
 		betreuung:
-			`Referent: Prof. Jörg Waldschütz
-			Co-Referent: Dipl.-Des. David Bascom`
+			`<h3>Referent</h3> Prof. Jörg Waldschütz<br>
+			<h3>Co-Referent</h3> Dipl.-Des. David Bascom`
 	},
 	{
 		slug: 'hannahreitze',
@@ -86,8 +86,8 @@ let absolventinnen = [
 		name: 'Hannah Reitze',
 		title: 'Die Welt der Mattaoi in ihren eigenen Worten.',
 		betreuung:
-			`Referent: Prof. Dr. Theo Steiner
-			Co-Referent: Prof. Dr. Boris Röhrl`
+			`<h3>Referent</h3> Prof. Dr. Theo Steiner<br>
+			<h3>Co-Referent</h3> Prof. Dr. Boris Röhrl`
 	},
 	{
 		slug: 'ildikomueller',
@@ -97,8 +97,8 @@ let absolventinnen = [
 		name: 'Ildikó Müller',
 		title: 'Dokumentarische Visualisierung der Mode der 90er Jahre',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. Kai Staudacher`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Kai Staudacher`
 	},
 	{
 		slug: 'jenniferleidolf',
@@ -108,8 +108,8 @@ let absolventinnen = [
 		name: 'Jennifer Leidolf',
 		title: 'Konzeption und Gestaltung für ambulante Pflegeeinrichtungen',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. Klaus Eckert`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Klaus Eckert`
 	},
 	{
 		slug: 'johannesbruns',
@@ -119,8 +119,8 @@ let absolventinnen = [
 		name: 'Johannes Bruns',
 		title: 'Das New Life Balance System',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referentin: Prof. Dr. Cornelia Freitag-Schubert`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referentin</h3> Prof. Dr. Cornelia Freitag-Schubert`
 	},
 	{
 		slug: 'josephineweier',
@@ -130,8 +130,8 @@ let absolventinnen = [
 		name: 'Josephine Weier',
 		title: 'Outro',
 		betreuung:
-			`Referent: Prof. Jörg Waldschütz
-			Co-Referent: Dipl.-Des. Sven Heller`
+			`<h3>Referent</h3> Prof. Jörg Waldschütz<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Sven Heller`
 	},
 	{
 		slug: 'katharinaeibeck',
@@ -141,8 +141,8 @@ let absolventinnen = [
 		name: 'Katharina Eibeck',
 		title: 'UNZiP',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. Kai Staudacher`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Kai Staudacher`
 	},
 	{
 		slug: 'laurapeter',
@@ -151,8 +151,8 @@ let absolventinnen = [
 			'Wusstest du, dass die medizinische Fachliteratur und Lehre Hauterkrankungen zu etwa 90% auf weißer Haut betrachtet? Und das, obwohl sich die Erscheinungsbilder von Symptomen und Hauterkrankungen auf den verschiedenen Hauttypen deutlich unterscheiden. Die Folgen sind Unter- und Fehldiagnosen bei Patient:innen mit dunkler Haut.\n Um Medizinstudierende und angehende Dermatolog:innen schon während ihrer Ausbildung für dieses Leck in der Lehre zu sensibilisieren, habe ich eine Aufklärungskampagne gestaltet.',
 		name: 'Laura Peter',
 		title: 'Rassismus geht unter die Haut ',
-		betreuung: `Referent: Prof. Taner Ercan
-		Co-Referent: Prof. Rüdiger Pichler`
+		betreuung: `<h3>Referent</h3> Prof. Taner Ercan
+		<h3>Co-Referent</h3> Prof. Rüdiger Pichler`
 	},
 	{
 		slug: 'laurareitze',
@@ -163,8 +163,8 @@ let absolventinnen = [
 		desc_long:
 			'Zu emotional, zu sensibel – den meisten Menschen fällt es schwer, über Emotionen zu reden. Dabei haben gerade Emotionen einen enormen Einfluss auf unsere Gesundheit und das Herz. Das Buch „Momentum: Herz&Emotion“ schafft durch die Verzahnung von Wissenschaft und Design einen forschend-experimentellen Zugang zur Wahrnehmung von Emotionen deren Einfluss auf die Herzgesundheit. Mit interaktiven Elementen und der multisensorischen Erfahrbarkeit von Sinneswahrnehmungen ist es möglich in neue Dimensionen der Wissensvermittlung einzutauchen.',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Prof. Dr. Theo Steiner`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Prof. Dr. Theo Steiner`
 	},
 	{
 		slug: 'leanaumann',
@@ -175,8 +175,8 @@ let absolventinnen = [
 		name: 'Lea Naumann',
 		title: 'Konzept und Gestaltung eines fiktiven Events für den DHB',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. Kai Staudacher`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Kai Staudacher`
 	},
 	{
 		slug: 'lenafuenfsinn',
@@ -186,8 +186,8 @@ let absolventinnen = [
 		name: 'Lena Fünfsinn',
 		title: 'Verzerrt.',
 		betreuung:
-			`Referentin: Prof. Dr. Cornelia Freitag-Schubert
-			Co-Referent: Prof. Dr. Theo Steiner`
+			`<h3>Referentin</h3> Prof. Dr. Cornelia Freitag-Schubert<br>
+			<h3>Co-Referent</h3> Prof. Dr. Theo Steiner`
 	},
 	{
 		slug: 'lillywehlmann',
@@ -197,8 +197,8 @@ let absolventinnen = [
 		name: 'Lilly Wehlmann',
 		title: 'GRÜNER',
 		betreuung:
-			`Referent: Prof. Dr. Theo Steiner
-			Co-Referent: Prof. Taner Ercan`
+			`<h3>Referent</h3> Prof. Dr. Theo Steiner<br>
+			<h3>Co-Referent</h3> Prof. Taner Ercan`
 	},
 	{
 		slug: 'luisamariazangardi',
@@ -208,8 +208,8 @@ let absolventinnen = [
 		desc_long:
 			'Herbsttrompeten ist eine Geschichte über Einsamkeit im Alter. Rosemarie lebt alleine. Durch ihre kauzige Art fällt es ihr schwer, Kontakte zu knüpfen. Eines Tages beschließt sie, ihre Einsamkeit auf ungewöhnliche Art zu beenden. Mit Hilfe einer Dating-App will sie ein Enkelkind finden. Fotos und Typo sollen die Lesenden in die Geschichte ziehen. Darstellen, dass sie nicht arg anders als die Protagonistin sind und zeigen: du könntest Rosemarie sein! Auch dich könnte Einsamkeit treffen. Oder bist du sogar schon einsam?',
 		betreuung:
-			`Referent: Prof. Dr. Theo Steiner
-			Co-Referentin: M.A. Laura Padgett`
+			`<h3>Referent</h3> Prof. Dr. Theo Steiner<br>
+			<h3>Co-Referentin</h3> M.A. Laura Padgett`
 	},
 	{
 		slug: 'luisekummer',
@@ -220,8 +220,8 @@ let absolventinnen = [
 		title: 'Mit gesundem Abstand',
 		noportrait: true,
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Prof. Dr. Theo Steiner`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Prof. Dr. Theo Steiner`
 	},
 	{
 		slug: 'matswitte',
@@ -231,8 +231,8 @@ let absolventinnen = [
 		title: 'Archiv der Artefakte des Androzän',
 		desc_short: 'Mixed Media Installation',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. David Bascom`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Dipl.-Des. David Bascom`
 	},
 	{
 		slug: 'michelleborsarileoniesybertz',
@@ -242,8 +242,8 @@ let absolventinnen = [
 		name: 'Michelle Borsari & Leonie Sybertz',
 		title: 'Secondhand-Mode',
 		betreuung:
-			`Referent: Prof. Rüdiger Pichler
-			Co-Referent: Dipl.-Des. Klaus Eckert`
+			`<h3>Referent</h3> Prof. Rüdiger Pichler<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Klaus Eckert`
 	},
 	{
 		slug: 'nicolechristineseegert',
@@ -253,8 +253,8 @@ let absolventinnen = [
 		desc_long:
 			'Die Wälder bieten Lebensräume für 80% aller landbewohnenden Tiere und Pflanzen. 2017 verschwanden jedoch weltweit etwa 40 Fußballfelder Regenwald – pro Minute. Wofür? Für die Fleischindustrie. Diese benötigt die Fläche u.a. für den Anbau von Futterpflanzen. Mein Animationsfilm erzählt die Geschichte eines kleinen Jaguars, der sein Zuhause, den Regenwald, durch eine solche Rodung verliert. Hierfür werden animierte Illustrationen mit 3D-Elementen und malerischen Texturen kombiniert.',
 		betreuung:
-			`Referent: Prof. Börries Müller-Büsching
-			Co-Referent: Dipl.-Des. Hannes Raff`
+			`<h3>Referent</h3> Prof. Börries Müller-Büsching<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Hannes Raff`
 	},
 	{
 		slug: 'patrickbeck',
@@ -264,8 +264,8 @@ let absolventinnen = [
 		name: 'Patrick Beck',
 		title: 'Shit Happens',
 		betreuung:
-			`Referent: Prof. Börries Müller-Büsching
-			Co-Referent: Prof. Dr. Theo Steiner`
+			`<h3>Referent</h3> Prof. Börries Müller-Büsching<br>
+			<h3>Co-Referent</h3> Prof. Dr. Theo Steiner`
 	},
 	{
 		slug: 'pierrerottmair',
@@ -275,8 +275,8 @@ let absolventinnen = [
 		desc_short: 'Neupositionerung eines Weinguts',
 		title: 'Achenbach Weingut',
 		betreuung:
-			`Referent: Prof. Taner Ercan
-			Co-Referent: Dipl.-Des. Kai Staudacher`
+			`<h3>Referent</h3> Prof. Taner Ercan<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Kai Staudacher`
 	},
 	{
 		slug: 'saragorzelec',
@@ -287,8 +287,8 @@ let absolventinnen = [
 		name: 'Sara Gorzelec',
 		title: 'Clickin',
 		betreuung:
-			`Referent: Prof. Jörg Waldschütz
-			Co-Referent: Dipl.-Des. David Bascom`
+			`<h3>Referent</h3> Prof. Jörg Waldschütz<br>
+			<h3>Co-Referent</h3> Dipl.-Des. David Bascom`
 	},
 	{
 		slug: 'sarahullmannsabinevonberger',
@@ -301,8 +301,8 @@ let absolventinnen = [
 		name: 'Sarah Ullmann & Sabine von Berger',
 		title: 'Kimya',
 		betreuung:
-			`Referent: Prof. Dr. Theo Steiner
-			Co-Referent: Dipl.-Des. David Bascom`
+			`<h3>Referent</h3> Prof. Dr. Theo Steiner<br>
+			<h3>Co-Referent</h3> Dipl.-Des. David Bascom`
 	},
 	{
 		slug: 'saskiabeutler',
@@ -315,8 +315,8 @@ let absolventinnen = [
 		title:
 			'Konzeption und Gestaltung eines nachhaltigen Cafés mit integriertem Pop Up-Verkauf',
 		betreuung:
-			`Referentin: Prof. Betty Schimmelpfennig
-			Co-Referent: Dipl.-Des. Kai Staudacher`
+			`<h3>Referentin</h3> Prof. Betty Schimmelpfennig<br>
+			<h3>Co-Referent</h3> Dipl.-Des. Kai Staudacher`
 	},
 	{
 		slug: 'sevdemazineler',
@@ -326,8 +326,8 @@ let absolventinnen = [
 		name: 'Sevde Mazineler',
 		title: 'Infinite Scroll',
 		betreuung:
-			`Referent: Prof. Jörg Waldschütz
-			Co-Referent: Dipl.-Des. David Bascom`
+			`<h3>Referent</h3> Prof. Jörg Waldschütz<br>
+			<h3>Co-Referent</h3> Dipl.-Des. David Bascom`
 	},
 	{
 		slug: 'sheilamaebreker',
@@ -338,8 +338,8 @@ let absolventinnen = [
 		desc_long:
 			'Erinnerungen bewegen sich; verändern sich; lösen sich; brennen sich ein. Erinnerungen haben Wirkung. Und fast immer gibt es hierfür einen Auslöser. Einen Schlüsselreiz, der uns kurzerhand in die Vergangenheit katapultiert. Der experimentelle Fotokurzfilm Moving Fragments beschäftigt sich mit dem Abhandenkommen von Heimat und untersucht die Erinnerungen der drei Protagonisten aus Jordanien. Ein Ausflug in die Köpfe derer, denen oftmals als einziges Andenken an ihre Vergangenheit ihr eigenes Gedankengut bleibt.\n\n\t\tgefördert von Hessenfilm',
 		betreuung:
-			`Referent: Prof. Tom Schreiber
-			Co-Referentin: M.A. Laura Padgett`
+			`<h3>Referent</h3> Prof. Tom Schreiber<br>
+			<h3>Co-Referentin</h3> M.A. Laura Padgett`
 	},
 	{
 		slug: 'theresapartschev',
@@ -349,8 +349,8 @@ let absolventinnen = [
 		desc_long:
 			'Wir alle wissen, dass jedes Kind ganz eigene, fantastische Talente und Eigenschaften aufweist. Doch dieses Potenzial bleibt in unserem traditionellen Bildungssystem oftmals links liegen. KORIOS ist eine Onlineplattform, die genau das ausgleichen möchte: Sie bietet Kurse an, die das Spiel Dungeons & Dragons nutzen, um die individuellen Talente, den Charakter und das emotionale Bewusstsein von Kindern zu stärken.',
 		betreuung:
-			`Referent: Prof. Rüdiger Pichler
-			Co-Referent: Prof. Jörg Waldschütz`
+			`<h3>Referent</h3> Prof. Rüdiger Pichler<br>
+			<h3>Co-Referent</h3> Prof. Jörg Waldschütz`
 	}
 ]
 
@@ -366,6 +366,8 @@ absolventinnen = absolventinnen.map((absolventin) => {
 			absolventin.images.push(file)
 		}
 	}
+	absolventin.videos.sort()
+	absolventin.images.sort().reverse()
 	return absolventin
 })
 
