@@ -7,7 +7,7 @@ permalink: "absolventinnen/{{ absolventin.slug }}/"
 layout: 'layout'
 bodyClass: 'transparent-header menu-white no-title absolvent-in'
 eleventyComputed:
-  title: "{{ absolventin.name }}"
+  title: "{{ absolventin.name | safe }}"
 ---
 
 <div class="absolventin-head" id="top">
