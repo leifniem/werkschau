@@ -1,4 +1,7 @@
-.absolventinnen-container, .projekte-container {
+.absolventinnen-container,
+.projekte-container,
+.datenschutz-container,
+.impressum-container {
 	padding: 12rem $padding-medium $padding-big;
 
 	@include r(1024) {
@@ -79,7 +82,8 @@
 	}
 
 	.media {
-		video, img {
+		video,
+		img {
 			width: 100%;
 			height: auto;
 			margin-bottom: $padding-medium;
@@ -93,7 +97,7 @@ a.arrdown {
 	left: 50%;
 	bottom: $padding-large;
 	transform: translateX(-50%);
-	color: rgba(#fff, .7);
+	color: rgba(#fff, 0.7);
 
 	img {
 		margin: $padding-medium auto 0;
