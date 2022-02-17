@@ -68,7 +68,7 @@ let absolventinnen = [
 	},
 	{
 		slug: 'fynnfischer',
-		desc_short: 'eine App zur Visualisierung der Klimabilanz von Lebensmitteln',
+		desc_short: 'Eine App zur Visualisierung der Klimabilanz von Lebensmitteln',
 		desc_long:
 			'Immer mehr erfahren wir von Waldbränden, Flutkatastrophen, Klimawandel. Und immer mehr kaufen wir plastikfreie, regionale, nachhaltige Produkte. Aber was ist nur Umweltversprechen, Werbebotschaft, Greenwashing?\n Conscious ist eine App, die deine Einkäufe nachhaltiger macht. Sie unterstützt dich dabei, mehr Rücksicht auf deine Gesundheit und die des Planeten zu nehmen. Das funktioniert, indem du einfach deinen Kassenzettel scannst.  Und damit eine übersichtliche Darstellung deiner Bilanz erhältst — mit individuellen Tipps und Empfehlungen zu einem nachhaltigeren Einkauf.',
 		name: 'Fynn Fischer',
