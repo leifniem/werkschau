@@ -18,14 +18,19 @@ bodyClass: 'index transparent-header menu-white no-logo no-title'
 		{% image "src/img/sponsor/bernhardtstiftung.png", "", "(min-width: 1024px) 20vh, 40vw" %}
 		{% image "src/img/sponsor/seglogo.png", "", "(min-width: 1024px) 20vh, 40vw" %}
 	</div>
-	<div class="key-visual">
+	<div class="key-visual desktop-only">
 		{% image "src/img/key-visual-min.png", "", "(min-width: 1024px) 50vw, 100vw" %}
-		<label for="menu-toggle" class="desktop-only key-visual-menu">
+		<label for="menu-toggle" class="key-visual-menu">
 					Press
-			</label>
+		</label>
+	</div>
+	<div class="key-visual-mobile mobile-only">
+		<label for="menu-toggle">
+			{% image "src/img/key-visual-min.png", "", "(min-width: 1024px) 50vw, 100vw" %}
+		</label>
 	</div>
 	<div class="content">
-		<div class="logo">{% image "src/img/logo.svg", "", "(min-width: 1024px) 50vw, 100vw" %}</div>
+		<div class="logo ">{% image "src/img/logo.svg", "", "(min-width: 1024px) 50vw, 100vw" %}</div>
 		<div class="text">
 			<h1>Werkschau</h1>
 			<h2>
@@ -87,13 +92,13 @@ bodyClass: 'index transparent-header menu-white no-logo no-title'
 					<span class="bottom">Uhr</span>
 				</div>
 			</div>
-			<div class="adress">
+			<p class="adress m-centered">
 				{% image "src/img/icon/location.svg",
 				"Ort",
 				"" %}
 							Kleine Schwalbacher Straße 8<br>
 							65183 Wiesbaden
-						</div>
+			</p>
 			<div class="rona">
 				<h2 class="desktop-only">
 								Dates<br>
@@ -126,10 +131,10 @@ bodyClass: 'index transparent-header menu-white no-logo no-title'
 				{% image "src/img/sponsor/seglogo.png", "Logo der SEG", "(min-width: 1024px) 20vh, 40vw" %}
 			</div>
 			<footer class="site-footer mobile-only">
-				<a href="#">
+				<a href="{{ "/datenschutz/" | url}}">
 								Datenschutz
-							</a>
-				<a href="#">
+							</a> —
+				<a href="{{ "/impressum/" | url}}">
 								Impressum
 							</a>
 			</footer>

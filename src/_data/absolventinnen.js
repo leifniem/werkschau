@@ -257,6 +257,16 @@ let absolventinnen = [
 			<h3>Co-Referent</h3> Dipl.-Des. Hannes Raff`
 	},
 	{
+		slug: 'oliverkuehl',
+		name: 'Oliver Kühl',
+		title: 'Pen&Paper Einsteiger Guide',
+		desc_short: 'Der illustrierte Guide ins Pen & Paper Rollenspiel für Anfänger vor ihrem ersten Abenteuer.',
+		desc_long: 'Er beinhaltet grundlegendes Wissen über Pen & Paper Rollenspiele, eine Einführung ins Rollenspiel, Tipps für die Erstellung des eigenen Charakters und das Rollenspiel in einer Gruppe. Außerdem auch eine Übersicht über bekannte Rollenspiele und Kontaktmöglichkeiten zu Pen&Paper Communities. Alles gespickt mit Beispielen zur eigenen Entfaltung mit Hinblick auf das eigene Spielerlebnis.',
+		betreuung:
+			`<h3>Referent</h3> Prof. Christine Bernhardt<br>
+			<h3>Co-Referent</h3> Prof. Boris Röhrl`
+	},
+	{
 		slug: 'patrickbeck',
 		desc_short: 'Entwicklung und Gestaltung eines taktischen Kartenspiels',
 		desc_long:

@@ -39,7 +39,15 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(tinysvg);
 	// eleventyConfig.addPlugin(tinyHTML);
 
+	eleventyConfig.setBrowserSyncConfig({
+		server: {
+		  baseDir: "_site/_eleventy_redirect",
+		  routes: { "/mysubdir/": "./_site" }
+		}
+	});
+
 	return {
+		pathPrefix: "/WS2021/",
 		markdownTemplateEngine: 'njk',
 		dir: {
 			input: 'src',

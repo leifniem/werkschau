@@ -7,7 +7,7 @@ bodyClass: absolventinnen
 <div class="absolventinnen-container wrapper">
 	<div class="grid-2col">
 		{% for absolvent in absolventinnen %}
-			<a href="/absolventinnen/{{ absolvent.slug }}" class="absolventin grid-2col">
+			<a href="{{ "/absolventinnen/" + absolvent.slug | url }}" class="absolventin grid-2col">
 				<div class="portrait">
 					{% if absolvent.noportrait === true %}
 						{% image "src/img/portraits/filler.jpg", "", "(min-width: 30em) 25vw, 100vw" %}

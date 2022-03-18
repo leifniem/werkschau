@@ -29,6 +29,10 @@
 		margin: $padding-medium 0 0 0;
 		hyphens: auto;
 		grid-area: title;
+
+		@media screen and (max-width: 864px) {
+			letter-spacing: .1em;
+		}
 	}
 
 	.transparent-header & {

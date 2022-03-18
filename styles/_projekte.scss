@@ -3,7 +3,7 @@
 	background-attachment: fixed;
 	background-size: 100% 100%;
 
-	a, .site-header {
+	.site-header {
 		color: rgba(#fff, .7);
 	}
 }
@@ -47,6 +47,7 @@
 	}
 
 	.text {
+		color: rgba(#fff, .7);
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;

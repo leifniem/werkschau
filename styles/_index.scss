@@ -20,7 +20,7 @@
 		position: fixed;
 		display: grid;
 		grid-area: content;
-		height: calc(100vh - $padding-big);
+		height: calc(85vh - $padding-big);
 		grid-template-rows: auto 1fr auto;
 		grid-template-areas:
 			'logo'
@@ -53,10 +53,16 @@
 
 
 	.key-visual {
-		// mix-blend-mode: screen;
-
-		// position: fixed;
 		z-index: 5;
+
+		&-mobile{
+			label {
+				position: fixed;
+				display: block;
+				height: 80vh;
+				z-index: 3;
+			}
+		}
 
 		&-menu {
 			opacity: 0;
@@ -182,7 +188,8 @@
 }
 
 .timecard-container {
-	z-index: 10;
+	z-index: 4;
+	pointer-events: none;
 
 	@include r(1024) {
 		position: fixed;
@@ -200,7 +207,7 @@
 }
 
 .timecard {
-	margin-top: 95vh;
+	margin-top: calc(80vh + $padding-large);
 	position: relative;
 	padding: 5vw;
 	background: $teal;

@@ -8,6 +8,7 @@ module.exports = {
 		require('autoprefixer'),
 		require('cssnano')({
 			preset: 'advanced',
+			zindex: false
 		}),
 		require('postcss-combine-media-query'),
 	],
